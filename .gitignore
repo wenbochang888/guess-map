@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.scratch/
+playwright-report/
+test-results/
+.DS_Store
+artifacts/*.zip
+artifacts/*.png
+artifacts/*.json
+
+# Generated 3D promo videos, frames, and verification reports
+/promo-3d/output/
+
+# Local reference materials
+/资料/
+
+# Local-only video projects
+/promo/
+/promo-shotcraft/

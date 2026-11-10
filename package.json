@@ -1,0 +1,30 @@
+{
+  "name": "guess-map-xhs",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc --noEmit && vite build && node scripts/finalize.mjs",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "preview": "node scripts/serve.mjs",
+    "audit": "node scripts/check-style.mjs && node scripts/check-style.mjs dist/style.css && node scripts/audit.mjs",
+    "package": "npm run build && npm run audit && python3 -I scripts/package.py",
+    "data:check": "node scripts/check-release.mjs",
+    "package:preview": "npm run build && npm run audit && python3 -I scripts/package.py --preview"
+  },
+  "dependencies": {
+    "vue": "3.5.45"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.19.0",
+    "@vitejs/plugin-vue": "5.2.4",
+    "acorn": "8.15.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "6.4.5",
+    "vue-tsc": "3.1.3"
+  }
+}

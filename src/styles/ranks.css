@@ -1,0 +1,17 @@
+/* ===== 排行榜页 ===== */
+.rank-layout{padding:20px 0 32px;padding-bottom:calc(32px + var(--page-bottom,0px))}
+.rank-layout>h1{font-size:var(--t-3xl);margin-top:8px}
+.title-dot{color:var(--accent)}
+.rank-layout .seg{margin-top:22px}
+.board-caption{font-size:var(--t-sm);color:var(--muted);margin-top:12px;line-height:1.7}
+.coverage-note{font-size:var(--t-xs);line-height:1.65;color:var(--muted);margin-top:7px}
+.period-tabs{position:relative;display:flex;margin:18px 0 8px;border-bottom:1px solid var(--line)}
+.period-tabs>button{min-height:48px;flex:1;font-size:var(--t-md);color:var(--muted);position:relative;transition:color var(--d-2)}
+.period-tabs>button.active{color:var(--ink);font-weight:700}
+.tab-indicator{position:absolute;bottom:-1px;left:0;width:33.3333%;height:3px;pointer-events:none;transition:transform var(--d-3) var(--ease-out)}
+.tab-indicator:after{content:"";display:block;width:28px;height:3px;margin:0 auto;background:var(--accent);border-radius:2px}
+.my-rank{display:flex;align-items:center;background:var(--ink);color:var(--surface);padding:18px 16px;border-radius:var(--r-md);margin:18px 0 8px;font-size:var(--t-sm);box-shadow:var(--shadow-1)}
+.my-rank strong{font-size:var(--t-xl);margin-left:auto;font-weight:700;font-family:var(--num)}
+.my-rank small{font-size:var(--t-xs);margin-left:10px;color:#cfd9cf}
+.rank-footnote{text-align:center;font-size:var(--t-xs);line-height:1.9;color:var(--muted);margin:24px 0}
+@media(min-width:600px){.rank-layout>h1{font-size:var(--t-4xl)}}

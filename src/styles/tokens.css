@@ -1,0 +1,28 @@
+/* 设计令牌：所有颜色、字号、间距、动效都从这里取值，组件样式不再硬编码。 */
+:root{
+  /* 纸张与墨色：向「猜地图」海报靠拢的米黄纸、墨绿、陶土红 */
+  --paper:#f5f0e6;--surface:#fffcf5;
+  --kraft:#efe5d0;--kraft-2:#e4d6b8;--kraft-line:#d2c3a0;
+  --ink:#1f3d32;--ink-2:#33554a;--muted:#5b6557;--line:#dcd2bb;--line-soft:#e8dfca;
+  --accent:#c4502a;--accent-text:#a3401e;--accent-soft:#f6e1d3;
+  --right-bg:#e2ecdd;--right-fg:#1f573a;--right-line:#5f8a68;
+  --wrong-bg:#f8e3d9;--wrong-fg:#9a361c;--wrong-line:#b4603f;
+  --dim:#66705f;--seg-bg:#ebe2cd;
+  /* 字号阶梯：全站只用这几档，最小 11px */
+  --t-xs:11px;--t-sm:12px;--t-md:14px;--t-lg:16px;--t-xl:20px;--t-2xl:24px;--t-3xl:32px;--t-4xl:44px;--t-5xl:56px;--t-num:96px;--t-num2:72px;
+  /* 间距、圆角、阴影 */
+  --s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;--s-6:32px;--s-7:48px;--s-8:64px;
+  --r-sm:6px;--r-md:12px;--r-lg:20px;
+  --shadow-1:0 1px 0 #1f3d3612,0 6px 16px #1f3d3612;
+  --shadow-2:0 2px 0 #1f3d3614,0 18px 44px #1f3d3624;
+  /* 动效：只动 transform 与 opacity */
+  --d-1:120ms;--d-2:200ms;--d-3:320ms;--d-4:480ms;
+  --ease-out:cubic-bezier(.2,.8,.2,1);--ease-pop:cubic-bezier(.34,1.56,.64,1);
+  /* 容器注入的安全区，保留静态兜底 */
+  --safe-top:0px;--page-top:var(--safe-area-inset-top,0px);--page-bottom:var(--safe-area-inset-bottom,0px);
+  --display:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --serif:"Songti SC","Noto Serif CJK SC",Georgia,serif;
+  --num:Georgia,"Times New Roman",serif;
+}
+@supports(padding-top:env(safe-area-inset-top)){:root{--page-top:var(--safe-area-inset-top,env(safe-area-inset-top,0px));--page-bottom:var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))}}
+:root.xhs-host{--page-top:calc(var(--safe-area-inset-top,0px) + 44px)}

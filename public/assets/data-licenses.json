@@ -1,0 +1,6215 @@
+{
+  "version": "2026-11-08.1",
+  "mapReviewStatus": "已取得审图号",
+  "administrativeCurrency": "CTAmap 2026年初快照；不保证截至今日行政现势",
+  "performanceStatus": "静态与桌面浏览器检查；移动WebView性能未实测",
+  "questionBank": {
+    "countries": 60,
+    "cities": 418,
+    "bytes": 2573912,
+    "sha256": "57e28d04923158e760e50a38b4e27ba5f1ab4f2fd2a019c67696e252f3b9431d"
+  },
+  "sources": [
+    {
+      "id": "natural-earth",
+      "name": "Natural Earth",
+      "version": "5.1.2; 1:50m admin_0_countries",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+      "license": "Public Domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "licenseEvidenceSha256": "35235c1304e4bdfd084ae89e0143bfeff9c98414f7ee183eb2ae982b93b3246d",
+      "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "usedFor": "60 个主权国家轮廓；不使用中国、香港、澳门、台湾几何；不将属地列作国家"
+    },
+    {
+      "id": "ctamap",
+      "name": "CTAmap v2.0 · 2026 snapshot",
+      "version": "v2.0 (2026-09-01); snapshot 2026-01-01 00:00",
+      "url": "https://www.shengshixian.com/pages/d35ae5/",
+      "doi": "https://doi.org/10.5281/zenodo.22179207",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Cheng, R., Xiao, C., Wang, Y. & Hu, Y. CTAmap: a continuous vector dataset of Chinese administrative divisions from 2000 to 2026. Modified: selected mainland province/prefecture/municipality-county features; projected, fitted and simplified. No endorsement implied.",
+      "licenseEvidence": {
+        "url": "https://www.shengshixian.com/pages/d35ae5/",
+        "accessed": "2026-11-07",
+        "pageSha256": "2ee6cd86b7ba5c5f85d5e88104c4a98096c70f8aaccb4933f2f60fb32842b102",
+        "visibleStatement": "CTAmap v2.0（2026-09-01）· 2000–2026 年 · 省 / 市 / 县三级 · CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+        "snapshotStatement": "每年图层为该年1月1日00:00的状态；2026年图层即2025年12月31日状态",
+        "licenseScopeNote": "CC BY 4.0 is the dataset statement; footer MIT is not treated as the data license.",
+        "attribution": "Cheng, R., Xiao, C., Wang, Y. & Hu, Y. CTAmap: a continuous vector dataset of Chinese administrative divisions from 2000 to 2026.",
+        "chongqingOfficialNotice": "渝府发〔2025〕15号：撤销江北区、渝北区，设立两江新区。",
+        "chongqingOfficialUrl": "https://www.cq.gov.cn/zwgk/zfxxgkml/zfgb/2025/d16q/202511/t20251124_15183601.html"
+      },
+      "files": [
+        {
+          "url": "https://pub-480fcfcea00742058bae6bc1c86d288c.r2.dev/T2026_province.gpkg",
+          "sha256": "bb4706a1999f45a1d8a82d4907f754515eb8628bf2bd489be23b4754e05aa681"
+        },
+        {
+          "url": "https://pub-480fcfcea00742058bae6bc1c86d288c.r2.dev/T2026_prefecture.gpkg",
+          "sha256": "6a35915313444d4e669fdc147eade4eb50d67489c38c00f340d871baa624ad85"
+        },
+        {
+          "url": "https://pub-480fcfcea00742058bae6bc1c86d288c.r2.dev/T2026_county.gpkg",
+          "sha256": "4c7f4cfed6ff0bf96ed569ef3a653bc19506c4e95781349b201084349a19c980"
+        }
+      ],
+      "usedFor": "31 province backgrounds; 333 prefectures and 85 municipality counties"
+    }
+  ],
+  "processing": {
+    "viewBox": "0 0 400 300",
+    "northUp": true,
+    "projection": "Local equirectangular, x=(unwrapped longitude-central meridian)*cos(standard parallel), y=-latitude; uniform scale and centered padding",
+    "mainPaddingPx": 18,
+    "contextPaddingPx": 12,
+    "mainSimplificationPx": 1,
+    "contextSimplificationPx": 1.4,
+    "highlightSimplificationPx": 1,
+    "roundingDecimals": "1 normally; adaptive 4/6/8/10 to prevent tiny-ring collapse",
+    "contextAlignment": "Shared parent projection, scaling and translation",
+    "rings": "All nondegenerate exterior/interior rings retained and normalized for nonzero fill; 293 numerically zero-area source interior slivers are listed in the coverage report; no islands relocated or independently enlarged",
+    "remoteTerritories": "Only France uses a geographic extent: European mainland and Corsica, not overseas regions. Every omitted polygon is listed per feature below. All source polygons of other selected countries are retained, including adjacent islands and remote parts; no mainland-centroid distance filter is used.",
+    "difficulty": "Manually assigned gameplay heuristic; not an objective geographic classification",
+    "distractors": "City choices use stable IDs from the same province; country distractors follow the versioned easy/medium/hard curation table (draft pending playtest).",
+    "features": [
+      {
+        "id": "country-jpn",
+        "sourceFeature": "JPN",
+        "projection": {
+          "centralMeridian": 137.826582,
+          "standardParallel": 34.887793
+        },
+        "retainedRings": 34,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-kor",
+        "sourceFeature": "KOR",
+        "projection": {
+          "centralMeridian": 127.371801,
+          "standardParallel": 35.912475
+        },
+        "retainedRings": 11,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-mng",
+        "sourceFeature": "MNG",
+        "projection": {
+          "centralMeridian": 102.878723,
+          "standardParallel": 46.856397
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-tha",
+        "sourceFeature": "THA",
+        "projection": {
+          "centralMeridian": 100.819853,
+          "standardParallel": 13.030591
+        },
+        "retainedRings": 10,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-vnm",
+        "sourceFeature": "VNM",
+        "projection": {
+          "centralMeridian": 106.080078,
+          "standardParallel": 15.964233
+        },
+        "retainedRings": 8,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-khm",
+        "sourceFeature": "KHM",
+        "projection": {
+          "centralMeridian": 105.257693,
+          "standardParallel": 12.558154
+        },
+        "retainedRings": 3,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-lao",
+        "sourceFeature": "LAO",
+        "projection": {
+          "centralMeridian": 103.795938,
+          "standardParallel": 18.208227
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-mys",
+        "sourceFeature": "MYS",
+        "projection": {
+          "centralMeridian": 114.778031,
+          "standardParallel": 4.106812
+        },
+        "retainedRings": 9,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-idn",
+        "sourceFeature": "IDN",
+        "projection": {
+          "centralMeridian": 114.259195,
+          "standardParallel": -2.501319
+        },
+        "retainedRings": 133,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-phl",
+        "sourceFeature": "PHL",
+        "projection": {
+          "centralMeridian": 121.862733,
+          "standardParallel": 12.950732
+        },
+        "retainedRings": 48,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-npl",
+        "sourceFeature": "NPL",
+        "projection": {
+          "centralMeridian": 84.322162,
+          "standardParallel": 28.373901
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-btn",
+        "sourceFeature": "BTN",
+        "projection": {
+          "centralMeridian": 90.584308,
+          "standardParallel": 27.506372
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-lka",
+        "sourceFeature": "LKA",
+        "projection": {
+          "centralMeridian": 80.647478,
+          "standardParallel": 7.88103
+        },
+        "retainedRings": 3,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-bgd",
+        "sourceFeature": "BGD",
+        "projection": {
+          "centralMeridian": 90.364631,
+          "standardParallel": 23.680982
+        },
+        "retainedRings": 7,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-sau",
+        "sourceFeature": "SAU",
+        "projection": {
+          "centralMeridian": 45.540882,
+          "standardParallel": 24.248145
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-omn",
+        "sourceFeature": "OMN",
+        "projection": {
+          "centralMeridian": 55.82313,
+          "standardParallel": 21.502369
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-are",
+        "sourceFeature": "ARE",
+        "projection": {
+          "centralMeridian": 54.484291,
+          "standardParallel": 24.344824
+        },
+        "retainedRings": 6,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-tur",
+        "sourceFeature": "TUR",
+        "projection": {
+          "centralMeridian": 35.776747,
+          "standardParallel": 38.962354
+        },
+        "retainedRings": 3,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-kaz",
+        "sourceFeature": "KAZ",
+        "projection": {
+          "centralMeridian": 66.177436,
+          "standardParallel": 47.999122
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-uzb",
+        "sourceFeature": "UZB",
+        "projection": {
+          "centralMeridian": 65.738243,
+          "standardParallel": 41.363794
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-gbr",
+        "sourceFeature": "GBR",
+        "projection": {
+          "centralMeridian": -3.214213,
+          "standardParallel": 55.426636
+        },
+        "retainedRings": 23,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-irl",
+        "sourceFeature": "IRL",
+        "projection": {
+          "centralMeridian": -8.389939,
+          "standardParallel": 53.419775
+        },
+        "retainedRings": 2,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-fra",
+        "sourceFeature": "FRA",
+        "projection": {
+          "centralMeridian": 2.646261,
+          "standardParallel": 46.241016
+        },
+        "retainedRings": 3,
+        "omittedPolygons": [
+          {
+            "polygonIndex": 3,
+            "bbox": [
+              45.042578,
+              -12.984961,
+              45.223145,
+              -12.653027
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 4,
+            "bbox": [
+              55.232813,
+              -21.369043,
+              55.839063,
+              -20.865137
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 5,
+            "bbox": [
+              -61.219727,
+              14.42627,
+              -60.82627,
+              14.875293
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 6,
+            "bbox": [
+              -61.53999,
+              16.219287,
+              -61.172607,
+              16.506641
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 7,
+            "bbox": [
+              -61.794092,
+              15.962061,
+              -61.552344,
+              16.355273
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 8,
+            "bbox": [
+              -61.318408,
+              15.886035,
+              -61.203418,
+              16.006299
+            ],
+            "reason": "France: outside European extent"
+          },
+          {
+            "polygonIndex": 9,
+            "bbox": [
+              -54.61626,
+              2.121045,
+              -51.652539,
+              5.782227
+            ],
+            "reason": "France: outside European extent"
+          }
+        ]
+      },
+      {
+        "id": "country-deu",
+        "sourceFeature": "DEU",
+        "projection": {
+          "centralMeridian": 10.261105,
+          "standardParallel": 51.168774
+        },
+        "retainedRings": 6,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-ita",
+        "sourceFeature": "ITA",
+        "projection": {
+          "centralMeridian": 11.902108,
+          "standardParallel": 41.884985
+        },
+        "retainedRings": 10,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-esp",
+        "sourceFeature": "ESP",
+        "projection": {
+          "centralMeridian": -3.964185,
+          "standardParallel": 35.705469
+        },
+        "retainedRings": 12,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-prt",
+        "sourceFeature": "PRT",
+        "projection": {
+          "centralMeridian": -7.894406,
+          "standardParallel": 37.392847
+        },
+        "retainedRings": 9,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-grc",
+        "sourceFeature": "GRC",
+        "projection": {
+          "centralMeridian": 22.994272,
+          "standardParallel": 38.339136
+        },
+        "retainedRings": 40,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-nor",
+        "sourceFeature": "NOR",
+        "projection": {
+          "centralMeridian": 15.105444,
+          "standardParallel": 69.24939
+        },
+        "retainedRings": 32,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-swe",
+        "sourceFeature": "SWE",
+        "projection": {
+          "centralMeridian": 17.459643,
+          "standardParallel": 62.191626
+        },
+        "retainedRings": 6,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-fin",
+        "sourceFeature": "FIN",
+        "projection": {
+          "centralMeridian": 25.36334,
+          "standardParallel": 64.94043
+        },
+        "retainedRings": 8,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-pol",
+        "sourceFeature": "POL",
+        "projection": {
+          "centralMeridian": 19.099177,
+          "standardParallel": 51.929468
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-aut",
+        "sourceFeature": "AUT",
+        "projection": {
+          "centralMeridian": 13.446066,
+          "standardParallel": 47.700415
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-che",
+        "sourceFeature": "CHE",
+        "projection": {
+          "centralMeridian": 8.312952,
+          "standardParallel": 46.802832
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-cze",
+        "sourceFeature": "CZE",
+        "projection": {
+          "centralMeridian": 15.440539,
+          "standardParallel": 49.807007
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-rou",
+        "sourceFeature": "ROU",
+        "projection": {
+          "centralMeridian": 24.529212,
+          "standardParallel": 45.967139
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-ukr",
+        "sourceFeature": "UKR",
+        "projection": {
+          "centralMeridian": 30.993997,
+          "standardParallel": 48.793847
+        },
+        "retainedRings": 2,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-egy",
+        "sourceFeature": "EGY",
+        "projection": {
+          "centralMeridian": 30.80374,
+          "standardParallel": 26.824926
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-zaf",
+        "sourceFeature": "ZAF",
+        "projection": {
+          "centralMeridian": 24.314406,
+          "standardParallel": -34.55459
+        },
+        "retainedRings": 3,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-ken",
+        "sourceFeature": "KEN",
+        "projection": {
+          "centralMeridian": 37.532849,
+          "standardParallel": 0.399951
+        },
+        "retainedRings": 2,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-tza",
+        "sourceFeature": "TZA",
+        "projection": {
+          "centralMeridian": 34.406791,
+          "standardParallel": -6.355567
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-eth",
+        "sourceFeature": "ETH",
+        "projection": {
+          "centralMeridian": 38.935429,
+          "standardParallel": 9.1542
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-gha",
+        "sourceFeature": "GHA",
+        "projection": {
+          "centralMeridian": -1.07888,
+          "standardParallel": 7.964673
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-nga",
+        "sourceFeature": "NGA",
+        "projection": {
+          "centralMeridian": 7.761629,
+          "standardParallel": 9.075122
+        },
+        "retainedRings": 2,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-dza",
+        "sourceFeature": "DZA",
+        "projection": {
+          "centralMeridian": 1.789942,
+          "standardParallel": 28.039502
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-mar",
+        "sourceFeature": "MAR",
+        "projection": {
+          "centralMeridian": -9.028325,
+          "standardParallel": 28.675293
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-mdg",
+        "sourceFeature": "MDG",
+        "projection": {
+          "centralMeridian": 46.87213,
+          "standardParallel": -18.825049
+        },
+        "retainedRings": 3,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-nam",
+        "sourceFeature": "NAM",
+        "projection": {
+          "centralMeridian": 18.141387,
+          "standardParallel": -22.953223
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-bwa",
+        "sourceFeature": "BWA",
+        "projection": {
+          "centralMeridian": 24.584675,
+          "standardParallel": -22.320898
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-usa",
+        "sourceFeature": "USA",
+        "projection": {
+          "centralMeridian": -90.264705,
+          "standardParallel": 45.185791
+        },
+        "retainedRings": 127,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-can",
+        "sourceFeature": "CAN",
+        "projection": {
+          "centralMeridian": -94.480062,
+          "standardParallel": 62.395483
+        },
+        "retainedRings": 141,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-mex",
+        "sourceFeature": "MEX",
+        "projection": {
+          "centralMeridian": -102.899372,
+          "standardParallel": 23.630371
+        },
+        "retainedRings": 16,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-bra",
+        "sourceFeature": "BRA",
+        "projection": {
+          "centralMeridian": -56.308935,
+          "standardParallel": -14.242114
+        },
+        "retainedRings": 17,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-arg",
+        "sourceFeature": "ARG",
+        "projection": {
+          "centralMeridian": -65.390576,
+          "standardParallel": -38.417334
+        },
+        "retainedRings": 4,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-chl",
+        "sourceFeature": "CHL",
+        "projection": {
+          "centralMeridian": -71.928465,
+          "standardParallel": -36.698877
+        },
+        "retainedRings": 31,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-per",
+        "sourceFeature": "PER",
+        "projection": {
+          "centralMeridian": -73.975376,
+          "standardParallel": -9.193676
+        },
+        "retainedRings": 1,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-col",
+        "sourceFeature": "COL",
+        "projection": {
+          "centralMeridian": -72.692782,
+          "standardParallel": 4.099218
+        },
+        "retainedRings": 2,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-aus",
+        "sourceFeature": "AUS",
+        "projection": {
+          "centralMeridian": 134.161091,
+          "standardParallel": -32.400488
+        },
+        "retainedRings": 42,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-cub",
+        "sourceFeature": "CUB",
+        "projection": {
+          "centralMeridian": -79.264403,
+          "standardParallel": 21.522949
+        },
+        "retainedRings": 7,
+        "omittedPolygons": []
+      },
+      {
+        "id": "country-png",
+        "sourceFeature": "PNG",
+        "projection": {
+          "centralMeridian": 145.346501,
+          "standardParallel": -6.491894
+        },
+        "retainedRings": 26,
+        "omittedPolygons": []
+      },
+      {
+        "id": "china-110101",
+        "sourceCode": "110101",
+        "sourceName": "东城区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110102",
+        "sourceCode": "110102",
+        "sourceName": "西城区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110105",
+        "sourceCode": "110105",
+        "sourceName": "朝阳区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-110106",
+        "sourceCode": "110106",
+        "sourceName": "丰台区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110107",
+        "sourceCode": "110107",
+        "sourceName": "石景山区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110108",
+        "sourceCode": "110108",
+        "sourceName": "海淀区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110109",
+        "sourceCode": "110109",
+        "sourceName": "门头沟区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110111",
+        "sourceCode": "110111",
+        "sourceName": "房山区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110112",
+        "sourceCode": "110112",
+        "sourceName": "通州区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110113",
+        "sourceCode": "110113",
+        "sourceName": "顺义区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-110114",
+        "sourceCode": "110114",
+        "sourceName": "昌平区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110115",
+        "sourceCode": "110115",
+        "sourceName": "大兴区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110116",
+        "sourceCode": "110116",
+        "sourceName": "怀柔区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110117",
+        "sourceCode": "110117",
+        "sourceName": "平谷区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110118",
+        "sourceCode": "110118",
+        "sourceName": "密云区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-110119",
+        "sourceCode": "110119",
+        "sourceName": "延庆区",
+        "parentId": "110000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 116.419606,
+          "standardParallel": 40.250521
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120101",
+        "sourceCode": "120101",
+        "sourceName": "和平区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120102",
+        "sourceCode": "120102",
+        "sourceName": "河东区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120103",
+        "sourceCode": "120103",
+        "sourceName": "河西区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120104",
+        "sourceCode": "120104",
+        "sourceName": "南开区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120105",
+        "sourceCode": "120105",
+        "sourceName": "河北区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120106",
+        "sourceCode": "120106",
+        "sourceName": "红桥区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120110",
+        "sourceCode": "120110",
+        "sourceName": "东丽区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120111",
+        "sourceCode": "120111",
+        "sourceName": "西青区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120112",
+        "sourceCode": "120112",
+        "sourceName": "津南区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120113",
+        "sourceCode": "120113",
+        "sourceName": "北辰区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120114",
+        "sourceCode": "120114",
+        "sourceName": "武清区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120115",
+        "sourceCode": "120115",
+        "sourceName": "宝坻区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120116",
+        "sourceCode": "120116",
+        "sourceName": "滨海新区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120117",
+        "sourceCode": "120117",
+        "sourceName": "宁河区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120118",
+        "sourceCode": "120118",
+        "sourceName": "静海区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-120119",
+        "sourceCode": "120119",
+        "sourceName": "蓟州区",
+        "parentId": "120000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 117.37792,
+          "standardParallel": 39.403294
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130100",
+        "sourceCode": "130100",
+        "sourceName": "石家庄市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130200",
+        "sourceCode": "130200",
+        "sourceName": "唐山市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 9
+      },
+      {
+        "id": "china-130300",
+        "sourceCode": "130300",
+        "sourceName": "秦皇岛市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130400",
+        "sourceCode": "130400",
+        "sourceName": "邯郸市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130500",
+        "sourceCode": "130500",
+        "sourceName": "邢台市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130600",
+        "sourceCode": "130600",
+        "sourceName": "保定市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130700",
+        "sourceCode": "130700",
+        "sourceName": "张家口市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130800",
+        "sourceCode": "130800",
+        "sourceName": "承德市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-130900",
+        "sourceCode": "130900",
+        "sourceName": "沧州市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-131000",
+        "sourceCode": "131000",
+        "sourceName": "廊坊市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-131100",
+        "sourceCode": "131100",
+        "sourceName": "衡水市",
+        "parentId": "130000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 116.170314,
+          "standardParallel": 39.332085
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140100",
+        "sourceCode": "140100",
+        "sourceName": "太原市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140200",
+        "sourceCode": "140200",
+        "sourceName": "大同市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140300",
+        "sourceCode": "140300",
+        "sourceName": "阳泉市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140400",
+        "sourceCode": "140400",
+        "sourceName": "长治市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140500",
+        "sourceCode": "140500",
+        "sourceName": "晋城市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140600",
+        "sourceCode": "140600",
+        "sourceName": "朔州市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140700",
+        "sourceCode": "140700",
+        "sourceName": "晋中市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140800",
+        "sourceCode": "140800",
+        "sourceName": "运城市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-140900",
+        "sourceCode": "140900",
+        "sourceName": "忻州市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-141000",
+        "sourceCode": "141000",
+        "sourceName": "临汾市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-141100",
+        "sourceCode": "141100",
+        "sourceName": "吕梁市",
+        "parentId": "140000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.159491,
+          "standardParallel": 37.664369
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150100",
+        "sourceCode": "150100",
+        "sourceName": "呼和浩特市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150200",
+        "sourceCode": "150200",
+        "sourceName": "包头市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150300",
+        "sourceCode": "150300",
+        "sourceName": "乌海市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150400",
+        "sourceCode": "150400",
+        "sourceName": "赤峰市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150500",
+        "sourceCode": "150500",
+        "sourceName": "通辽市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150600",
+        "sourceCode": "150600",
+        "sourceName": "鄂尔多斯市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150700",
+        "sourceCode": "150700",
+        "sourceName": "呼伦贝尔市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150800",
+        "sourceCode": "150800",
+        "sourceName": "巴彦淖尔市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-150900",
+        "sourceCode": "150900",
+        "sourceName": "乌兰察布市",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-152200",
+        "sourceCode": "152200",
+        "sourceName": "兴安盟",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "盟",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-152500",
+        "sourceCode": "152500",
+        "sourceName": "锡林郭勒盟",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "盟",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-152900",
+        "sourceCode": "152900",
+        "sourceName": "阿拉善盟",
+        "parentId": "150000",
+        "sourceLayer": "prefecture",
+        "sourceType": "盟",
+        "projection": {
+          "centralMeridian": 118.775904,
+          "standardParallel": 45.370213
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210100",
+        "sourceCode": "210100",
+        "sourceName": "沈阳市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210200",
+        "sourceCode": "210200",
+        "sourceName": "大连市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 34
+      },
+      {
+        "id": "china-210300",
+        "sourceCode": "210300",
+        "sourceName": "鞍山市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210400",
+        "sourceCode": "210400",
+        "sourceName": "抚顺市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210500",
+        "sourceCode": "210500",
+        "sourceName": "本溪市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210600",
+        "sourceCode": "210600",
+        "sourceName": "丹东市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-210700",
+        "sourceCode": "210700",
+        "sourceName": "锦州市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-210800",
+        "sourceCode": "210800",
+        "sourceName": "营口市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-210900",
+        "sourceCode": "210900",
+        "sourceName": "阜新市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-211000",
+        "sourceCode": "211000",
+        "sourceName": "辽阳市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-211100",
+        "sourceCode": "211100",
+        "sourceName": "盘锦市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-211200",
+        "sourceCode": "211200",
+        "sourceName": "铁岭市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-211300",
+        "sourceCode": "211300",
+        "sourceName": "朝阳市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-211400",
+        "sourceCode": "211400",
+        "sourceName": "葫芦岛市",
+        "parentId": "210000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 123.073788,
+          "standardParallel": 41.105044
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-220100",
+        "sourceCode": "220100",
+        "sourceName": "长春市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220200",
+        "sourceCode": "220200",
+        "sourceName": "吉林市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220300",
+        "sourceCode": "220300",
+        "sourceName": "四平市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220400",
+        "sourceCode": "220400",
+        "sourceName": "辽源市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220500",
+        "sourceCode": "220500",
+        "sourceName": "通化市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220600",
+        "sourceCode": "220600",
+        "sourceName": "白山市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220700",
+        "sourceCode": "220700",
+        "sourceName": "松原市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-220800",
+        "sourceCode": "220800",
+        "sourceName": "白城市",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-222400",
+        "sourceCode": "222400",
+        "sourceName": "延边朝鲜族自治州",
+        "parentId": "220000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 126.891127,
+          "standardParallel": 43.579481
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230100",
+        "sourceCode": "230100",
+        "sourceName": "哈尔滨市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230200",
+        "sourceCode": "230200",
+        "sourceName": "齐齐哈尔市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230300",
+        "sourceCode": "230300",
+        "sourceName": "鸡西市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230400",
+        "sourceCode": "230400",
+        "sourceName": "鹤岗市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230500",
+        "sourceCode": "230500",
+        "sourceName": "双鸭山市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230600",
+        "sourceCode": "230600",
+        "sourceName": "大庆市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230700",
+        "sourceCode": "230700",
+        "sourceName": "伊春市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230800",
+        "sourceCode": "230800",
+        "sourceName": "佳木斯市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-230900",
+        "sourceCode": "230900",
+        "sourceName": "七台河市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-231000",
+        "sourceCode": "231000",
+        "sourceName": "牡丹江市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-231100",
+        "sourceCode": "231100",
+        "sourceName": "黑河市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-231200",
+        "sourceCode": "231200",
+        "sourceName": "绥化市",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-232700",
+        "sourceCode": "232700",
+        "sourceName": "大兴安岭地区",
+        "parentId": "230000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 127.528222,
+          "standardParallel": 48.491947
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310101",
+        "sourceCode": "310101",
+        "sourceName": "黄浦区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310104",
+        "sourceCode": "310104",
+        "sourceName": "徐汇区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310105",
+        "sourceCode": "310105",
+        "sourceName": "长宁区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310106",
+        "sourceCode": "310106",
+        "sourceName": "静安区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310107",
+        "sourceCode": "310107",
+        "sourceName": "普陀区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310109",
+        "sourceCode": "310109",
+        "sourceName": "虹口区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310110",
+        "sourceCode": "310110",
+        "sourceName": "杨浦区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310112",
+        "sourceCode": "310112",
+        "sourceName": "闵行区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310113",
+        "sourceCode": "310113",
+        "sourceName": "宝山区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310114",
+        "sourceCode": "310114",
+        "sourceName": "嘉定区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310115",
+        "sourceCode": "310115",
+        "sourceName": "浦东新区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-310116",
+        "sourceCode": "310116",
+        "sourceName": "金山区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310117",
+        "sourceCode": "310117",
+        "sourceName": "松江区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310118",
+        "sourceCode": "310118",
+        "sourceName": "青浦区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310120",
+        "sourceCode": "310120",
+        "sourceName": "奉贤区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-310151",
+        "sourceCode": "310151",
+        "sourceName": "崇明区",
+        "parentId": "310000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 121.360503,
+          "standardParallel": 31.282124
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320100",
+        "sourceCode": "320100",
+        "sourceName": "南京市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320200",
+        "sourceCode": "320200",
+        "sourceName": "无锡市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320300",
+        "sourceCode": "320300",
+        "sourceName": "徐州市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320400",
+        "sourceCode": "320400",
+        "sourceName": "常州市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320500",
+        "sourceCode": "320500",
+        "sourceName": "苏州市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320600",
+        "sourceCode": "320600",
+        "sourceName": "南通市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-320700",
+        "sourceCode": "320700",
+        "sourceName": "连云港市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-320800",
+        "sourceCode": "320800",
+        "sourceName": "淮安市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-320900",
+        "sourceCode": "320900",
+        "sourceName": "盐城市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-321000",
+        "sourceCode": "321000",
+        "sourceName": "扬州市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-321100",
+        "sourceCode": "321100",
+        "sourceName": "镇江市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-321200",
+        "sourceCode": "321200",
+        "sourceName": "泰州市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-321300",
+        "sourceCode": "321300",
+        "sourceName": "宿迁市",
+        "parentId": "320000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 119.112222,
+          "standardParallel": 32.943739
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330100",
+        "sourceCode": "330100",
+        "sourceName": "杭州市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330200",
+        "sourceCode": "330200",
+        "sourceName": "宁波市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 40
+      },
+      {
+        "id": "china-330300",
+        "sourceCode": "330300",
+        "sourceName": "温州市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 38
+      },
+      {
+        "id": "china-330400",
+        "sourceCode": "330400",
+        "sourceName": "嘉兴市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330500",
+        "sourceCode": "330500",
+        "sourceName": "湖州市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330600",
+        "sourceCode": "330600",
+        "sourceName": "绍兴市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330700",
+        "sourceCode": "330700",
+        "sourceName": "金华市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330800",
+        "sourceCode": "330800",
+        "sourceName": "衢州市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-330900",
+        "sourceCode": "330900",
+        "sourceName": "舟山市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 101
+      },
+      {
+        "id": "china-331000",
+        "sourceCode": "331000",
+        "sourceName": "台州市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 42
+      },
+      {
+        "id": "china-331100",
+        "sourceCode": "331100",
+        "sourceName": "丽水市",
+        "parentId": "330000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 120.377389,
+          "standardParallel": 29.162989
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340100",
+        "sourceCode": "340100",
+        "sourceName": "合肥市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340200",
+        "sourceCode": "340200",
+        "sourceName": "芜湖市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340300",
+        "sourceCode": "340300",
+        "sourceName": "蚌埠市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340400",
+        "sourceCode": "340400",
+        "sourceName": "淮南市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340500",
+        "sourceCode": "340500",
+        "sourceName": "马鞍山市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-340600",
+        "sourceCode": "340600",
+        "sourceName": "淮北市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-340700",
+        "sourceCode": "340700",
+        "sourceName": "铜陵市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-340800",
+        "sourceCode": "340800",
+        "sourceName": "安庆市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-341000",
+        "sourceCode": "341000",
+        "sourceName": "黄山市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341100",
+        "sourceCode": "341100",
+        "sourceName": "滁州市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341200",
+        "sourceCode": "341200",
+        "sourceName": "阜阳市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341300",
+        "sourceCode": "341300",
+        "sourceName": "宿州市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341500",
+        "sourceCode": "341500",
+        "sourceName": "六安市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341600",
+        "sourceCode": "341600",
+        "sourceName": "亳州市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341700",
+        "sourceCode": "341700",
+        "sourceName": "池州市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-341800",
+        "sourceCode": "341800",
+        "sourceName": "宣城市",
+        "parentId": "340000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 117.283463,
+          "standardParallel": 32.023766
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-350100",
+        "sourceCode": "350100",
+        "sourceName": "福州市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 29
+      },
+      {
+        "id": "china-350200",
+        "sourceCode": "350200",
+        "sourceName": "厦门市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 6
+      },
+      {
+        "id": "china-350300",
+        "sourceCode": "350300",
+        "sourceName": "莆田市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 15
+      },
+      {
+        "id": "china-350400",
+        "sourceCode": "350400",
+        "sourceName": "三明市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-350500",
+        "sourceCode": "350500",
+        "sourceName": "泉州市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 8
+      },
+      {
+        "id": "china-350600",
+        "sourceCode": "350600",
+        "sourceName": "漳州市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 15
+      },
+      {
+        "id": "china-350700",
+        "sourceCode": "350700",
+        "sourceName": "南平市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-350800",
+        "sourceCode": "350800",
+        "sourceName": "龙岩市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-350900",
+        "sourceCode": "350900",
+        "sourceName": "宁德市",
+        "parentId": "350000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.747266,
+          "standardParallel": 25.942175
+        },
+        "retainedRings": 34
+      },
+      {
+        "id": "china-360100",
+        "sourceCode": "360100",
+        "sourceName": "南昌市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360200",
+        "sourceCode": "360200",
+        "sourceName": "景德镇市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360300",
+        "sourceCode": "360300",
+        "sourceName": "萍乡市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360400",
+        "sourceCode": "360400",
+        "sourceName": "九江市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360500",
+        "sourceCode": "360500",
+        "sourceName": "新余市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360600",
+        "sourceCode": "360600",
+        "sourceName": "鹰潭市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360700",
+        "sourceCode": "360700",
+        "sourceName": "赣州市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360800",
+        "sourceCode": "360800",
+        "sourceName": "吉安市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-360900",
+        "sourceCode": "360900",
+        "sourceName": "宜春市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-361000",
+        "sourceCode": "361000",
+        "sourceName": "抚州市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-361100",
+        "sourceCode": "361100",
+        "sourceName": "上饶市",
+        "parentId": "360000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 115.634492,
+          "standardParallel": 27.283633
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370100",
+        "sourceCode": "370100",
+        "sourceName": "济南市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370200",
+        "sourceCode": "370200",
+        "sourceName": "青岛市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 9
+      },
+      {
+        "id": "china-370300",
+        "sourceCode": "370300",
+        "sourceName": "淄博市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370400",
+        "sourceCode": "370400",
+        "sourceName": "枣庄市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370500",
+        "sourceCode": "370500",
+        "sourceName": "东营市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-370600",
+        "sourceCode": "370600",
+        "sourceName": "烟台市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 18
+      },
+      {
+        "id": "china-370700",
+        "sourceCode": "370700",
+        "sourceName": "潍坊市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370800",
+        "sourceCode": "370800",
+        "sourceName": "济宁市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-370900",
+        "sourceCode": "370900",
+        "sourceName": "泰安市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371000",
+        "sourceCode": "371000",
+        "sourceName": "威海市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-371100",
+        "sourceCode": "371100",
+        "sourceName": "日照市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371300",
+        "sourceCode": "371300",
+        "sourceName": "临沂市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371400",
+        "sourceCode": "371400",
+        "sourceName": "德州市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371500",
+        "sourceCode": "371500",
+        "sourceName": "聊城市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371600",
+        "sourceCode": "371600",
+        "sourceName": "滨州市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-371700",
+        "sourceCode": "371700",
+        "sourceName": "菏泽市",
+        "parentId": "370000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 118.710233,
+          "standardParallel": 36.388643
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410100",
+        "sourceCode": "410100",
+        "sourceName": "郑州市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410200",
+        "sourceCode": "410200",
+        "sourceName": "开封市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410300",
+        "sourceCode": "410300",
+        "sourceName": "洛阳市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410400",
+        "sourceCode": "410400",
+        "sourceName": "平顶山市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410500",
+        "sourceCode": "410500",
+        "sourceName": "安阳市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-410600",
+        "sourceCode": "410600",
+        "sourceName": "鹤壁市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410700",
+        "sourceCode": "410700",
+        "sourceName": "新乡市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410800",
+        "sourceCode": "410800",
+        "sourceName": "焦作市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-410900",
+        "sourceCode": "410900",
+        "sourceName": "濮阳市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-411000",
+        "sourceCode": "411000",
+        "sourceName": "许昌市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-411100",
+        "sourceCode": "411100",
+        "sourceName": "漯河市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-411200",
+        "sourceCode": "411200",
+        "sourceName": "三门峡市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-411300",
+        "sourceCode": "411300",
+        "sourceName": "南阳市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-411400",
+        "sourceCode": "411400",
+        "sourceName": "商丘市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-411500",
+        "sourceCode": "411500",
+        "sourceName": "信阳市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-411600",
+        "sourceCode": "411600",
+        "sourceName": "周口市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-411700",
+        "sourceCode": "411700",
+        "sourceName": "驻马店市",
+        "parentId": "410000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 113.404314,
+          "standardParallel": 33.875454
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-420100",
+        "sourceCode": "420100",
+        "sourceName": "武汉市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-420200",
+        "sourceCode": "420200",
+        "sourceName": "黄石市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-420300",
+        "sourceCode": "420300",
+        "sourceName": "十堰市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-420500",
+        "sourceCode": "420500",
+        "sourceName": "宜昌市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-420600",
+        "sourceCode": "420600",
+        "sourceName": "襄阳市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-420700",
+        "sourceCode": "420700",
+        "sourceName": "鄂州市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-420800",
+        "sourceCode": "420800",
+        "sourceName": "荆门市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-420900",
+        "sourceCode": "420900",
+        "sourceName": "孝感市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-421000",
+        "sourceCode": "421000",
+        "sourceName": "荆州市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-421100",
+        "sourceCode": "421100",
+        "sourceName": "黄冈市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-421200",
+        "sourceCode": "421200",
+        "sourceName": "咸宁市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-421300",
+        "sourceCode": "421300",
+        "sourceName": "随州市",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-422800",
+        "sourceCode": "422800",
+        "sourceName": "恩施土家族苗族自治州",
+        "parentId": "420000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 111.379015,
+          "standardParallel": 31.152823
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430100",
+        "sourceCode": "430100",
+        "sourceName": "长沙市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430200",
+        "sourceCode": "430200",
+        "sourceName": "株洲市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430300",
+        "sourceCode": "430300",
+        "sourceName": "湘潭市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430400",
+        "sourceCode": "430400",
+        "sourceName": "衡阳市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430500",
+        "sourceCode": "430500",
+        "sourceName": "邵阳市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430600",
+        "sourceCode": "430600",
+        "sourceName": "岳阳市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-430700",
+        "sourceCode": "430700",
+        "sourceName": "常德市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430800",
+        "sourceCode": "430800",
+        "sourceName": "张家界市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-430900",
+        "sourceCode": "430900",
+        "sourceName": "益阳市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-431000",
+        "sourceCode": "431000",
+        "sourceName": "郴州市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-431100",
+        "sourceCode": "431100",
+        "sourceName": "永州市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-431200",
+        "sourceCode": "431200",
+        "sourceName": "怀化市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-431300",
+        "sourceCode": "431300",
+        "sourceName": "娄底市",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-433100",
+        "sourceCode": "433100",
+        "sourceName": "湘西土家族苗族自治州",
+        "parentId": "430000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 111.28735,
+          "standardParallel": 27.384079
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-440100",
+        "sourceCode": "440100",
+        "sourceName": "广州市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-440200",
+        "sourceCode": "440200",
+        "sourceName": "韶关市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-440300",
+        "sourceCode": "440300",
+        "sourceName": "深圳市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-440400",
+        "sourceCode": "440400",
+        "sourceName": "珠海市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 37
+      },
+      {
+        "id": "china-440500",
+        "sourceCode": "440500",
+        "sourceName": "汕头市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 5
+      },
+      {
+        "id": "china-440600",
+        "sourceCode": "440600",
+        "sourceName": "佛山市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-440700",
+        "sourceCode": "440700",
+        "sourceName": "江门市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 13
+      },
+      {
+        "id": "china-440800",
+        "sourceCode": "440800",
+        "sourceName": "湛江市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 16
+      },
+      {
+        "id": "china-440900",
+        "sourceCode": "440900",
+        "sourceName": "茂名市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-441200",
+        "sourceCode": "441200",
+        "sourceName": "肇庆市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-441300",
+        "sourceCode": "441300",
+        "sourceName": "惠州市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 11
+      },
+      {
+        "id": "china-441400",
+        "sourceCode": "441400",
+        "sourceName": "梅州市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-441500",
+        "sourceCode": "441500",
+        "sourceName": "汕尾市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 5
+      },
+      {
+        "id": "china-441600",
+        "sourceCode": "441600",
+        "sourceName": "河源市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-441700",
+        "sourceCode": "441700",
+        "sourceName": "阳江市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 7
+      },
+      {
+        "id": "china-441800",
+        "sourceCode": "441800",
+        "sourceName": "清远市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-441900",
+        "sourceCode": "441900",
+        "sourceName": "东莞市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-442000",
+        "sourceCode": "442000",
+        "sourceName": "中山市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-445100",
+        "sourceCode": "445100",
+        "sourceName": "潮州市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-445200",
+        "sourceCode": "445200",
+        "sourceName": "揭阳市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-445300",
+        "sourceCode": "445300",
+        "sourceName": "云浮市",
+        "parentId": "440000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 112.653096,
+          "standardParallel": 22.871612
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450100",
+        "sourceCode": "450100",
+        "sourceName": "南宁市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450200",
+        "sourceCode": "450200",
+        "sourceName": "柳州市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450300",
+        "sourceCode": "450300",
+        "sourceName": "桂林市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450400",
+        "sourceCode": "450400",
+        "sourceName": "梧州市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450500",
+        "sourceCode": "450500",
+        "sourceName": "北海市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 8
+      },
+      {
+        "id": "china-450600",
+        "sourceCode": "450600",
+        "sourceName": "防城港市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-450700",
+        "sourceCode": "450700",
+        "sourceName": "钦州市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 9
+      },
+      {
+        "id": "china-450800",
+        "sourceCode": "450800",
+        "sourceName": "贵港市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-450900",
+        "sourceCode": "450900",
+        "sourceName": "玉林市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-451000",
+        "sourceCode": "451000",
+        "sourceName": "百色市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-451100",
+        "sourceCode": "451100",
+        "sourceName": "贺州市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-451200",
+        "sourceCode": "451200",
+        "sourceName": "河池市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-451300",
+        "sourceCode": "451300",
+        "sourceName": "来宾市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-451400",
+        "sourceCode": "451400",
+        "sourceName": "崇左市",
+        "parentId": "450000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 108.520917,
+          "standardParallel": 23.645417
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-460100",
+        "sourceCode": "460100",
+        "sourceName": "海口市",
+        "parentId": "460000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 110.138193,
+          "standardParallel": 11.999681
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-460200",
+        "sourceCode": "460200",
+        "sourceName": "三亚市",
+        "parentId": "460000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 110.138193,
+          "standardParallel": 11.999681
+        },
+        "retainedRings": 10
+      },
+      {
+        "id": "china-460300",
+        "sourceCode": "460300",
+        "sourceName": "三沙市",
+        "parentId": "460000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 110.138193,
+          "standardParallel": 11.999681
+        },
+        "retainedRings": 233
+      },
+      {
+        "id": "china-460400",
+        "sourceCode": "460400",
+        "sourceName": "儋州市",
+        "parentId": "460000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 110.138193,
+          "standardParallel": 11.999681
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-500101",
+        "sourceCode": "500101",
+        "sourceName": "万州区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500102",
+        "sourceCode": "500102",
+        "sourceName": "涪陵区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500103",
+        "sourceCode": "500103",
+        "sourceName": "渝中区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500104",
+        "sourceCode": "500104",
+        "sourceName": "大渡口区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500106",
+        "sourceCode": "500106",
+        "sourceName": "沙坪坝区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500107",
+        "sourceCode": "500107",
+        "sourceName": "九龙坡区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500108",
+        "sourceCode": "500108",
+        "sourceName": "南岸区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500109",
+        "sourceCode": "500109",
+        "sourceName": "北碚区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500110",
+        "sourceCode": "500110",
+        "sourceName": "綦江区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500111",
+        "sourceCode": "500111",
+        "sourceName": "大足区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500113",
+        "sourceCode": "500113",
+        "sourceName": "巴南区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500114",
+        "sourceCode": "500114",
+        "sourceName": "黔江区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500115",
+        "sourceCode": "500115",
+        "sourceName": "长寿区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500116",
+        "sourceCode": "500116",
+        "sourceName": "江津区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500117",
+        "sourceCode": "500117",
+        "sourceName": "合川区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500118",
+        "sourceCode": "500118",
+        "sourceName": "永川区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500119",
+        "sourceCode": "500119",
+        "sourceName": "南川区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500120",
+        "sourceCode": "500120",
+        "sourceName": "璧山区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500151",
+        "sourceCode": "500151",
+        "sourceName": "铜梁区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500152",
+        "sourceCode": "500152",
+        "sourceName": "潼南区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500153",
+        "sourceCode": "500153",
+        "sourceName": "荣昌区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500154",
+        "sourceCode": "500154",
+        "sourceName": "开州区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500155",
+        "sourceCode": "500155",
+        "sourceName": "梁平区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500156",
+        "sourceCode": "500156",
+        "sourceName": "武隆区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500157",
+        "sourceCode": "500157",
+        "sourceName": "两江新区",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "市辖区",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500229",
+        "sourceCode": "500229",
+        "sourceName": "城口县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500230",
+        "sourceCode": "500230",
+        "sourceName": "丰都县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500231",
+        "sourceCode": "500231",
+        "sourceName": "垫江县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500233",
+        "sourceCode": "500233",
+        "sourceName": "忠县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500235",
+        "sourceCode": "500235",
+        "sourceName": "云阳县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500236",
+        "sourceCode": "500236",
+        "sourceName": "奉节县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500237",
+        "sourceCode": "500237",
+        "sourceName": "巫山县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500238",
+        "sourceCode": "500238",
+        "sourceName": "巫溪县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500240",
+        "sourceCode": "500240",
+        "sourceName": "石柱土家族自治县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "自治县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500241",
+        "sourceCode": "500241",
+        "sourceName": "秀山土家族苗族自治县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "自治县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500242",
+        "sourceCode": "500242",
+        "sourceName": "酉阳土家族苗族自治县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "自治县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-500243",
+        "sourceCode": "500243",
+        "sourceName": "彭水苗族土家族自治县",
+        "parentId": "500000",
+        "sourceLayer": "county",
+        "sourceType": "自治县",
+        "projection": {
+          "centralMeridian": 108.14692,
+          "standardParallel": 30.184438
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510100",
+        "sourceCode": "510100",
+        "sourceName": "成都市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510300",
+        "sourceCode": "510300",
+        "sourceName": "自贡市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510400",
+        "sourceCode": "510400",
+        "sourceName": "攀枝花市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-510500",
+        "sourceCode": "510500",
+        "sourceName": "泸州市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510600",
+        "sourceCode": "510600",
+        "sourceName": "德阳市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510700",
+        "sourceCode": "510700",
+        "sourceName": "绵阳市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510800",
+        "sourceCode": "510800",
+        "sourceName": "广元市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-510900",
+        "sourceCode": "510900",
+        "sourceName": "遂宁市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511000",
+        "sourceCode": "511000",
+        "sourceName": "内江市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511100",
+        "sourceCode": "511100",
+        "sourceName": "乐山市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511300",
+        "sourceCode": "511300",
+        "sourceName": "南充市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511400",
+        "sourceCode": "511400",
+        "sourceName": "眉山市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511500",
+        "sourceCode": "511500",
+        "sourceName": "宜宾市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511600",
+        "sourceCode": "511600",
+        "sourceName": "广安市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511700",
+        "sourceCode": "511700",
+        "sourceName": "达州市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511800",
+        "sourceCode": "511800",
+        "sourceName": "雅安市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-511900",
+        "sourceCode": "511900",
+        "sourceName": "巴中市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-512000",
+        "sourceCode": "512000",
+        "sourceName": "资阳市",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-513200",
+        "sourceCode": "513200",
+        "sourceName": "阿坝藏族羌族自治州",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-513300",
+        "sourceCode": "513300",
+        "sourceName": "甘孜藏族自治州",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-513400",
+        "sourceCode": "513400",
+        "sourceName": "凉山彝族自治州",
+        "parentId": "510000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 103.188588,
+          "standardParallel": 30.181723
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-520100",
+        "sourceCode": "520100",
+        "sourceName": "贵阳市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-520200",
+        "sourceCode": "520200",
+        "sourceName": "六盘水市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-520300",
+        "sourceCode": "520300",
+        "sourceName": "遵义市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-520400",
+        "sourceCode": "520400",
+        "sourceName": "安顺市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-520500",
+        "sourceCode": "520500",
+        "sourceName": "毕节市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-520600",
+        "sourceCode": "520600",
+        "sourceName": "铜仁市",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-522300",
+        "sourceCode": "522300",
+        "sourceName": "黔西南布依族苗族自治州",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-522600",
+        "sourceCode": "522600",
+        "sourceName": "黔东南苗族侗族自治州",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-522700",
+        "sourceCode": "522700",
+        "sourceName": "黔南布依族苗族自治州",
+        "parentId": "520000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 107.326001,
+          "standardParallel": 26.922629
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-530100",
+        "sourceCode": "530100",
+        "sourceName": "昆明市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-530300",
+        "sourceCode": "530300",
+        "sourceName": "曲靖市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-530400",
+        "sourceCode": "530400",
+        "sourceName": "玉溪市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-530500",
+        "sourceCode": "530500",
+        "sourceName": "保山市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-530600",
+        "sourceCode": "530600",
+        "sourceName": "昭通市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-530700",
+        "sourceCode": "530700",
+        "sourceName": "丽江市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-530800",
+        "sourceCode": "530800",
+        "sourceName": "普洱市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-530900",
+        "sourceCode": "530900",
+        "sourceName": "临沧市",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-532300",
+        "sourceCode": "532300",
+        "sourceName": "楚雄彝族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-532500",
+        "sourceCode": "532500",
+        "sourceName": "红河哈尼族彝族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-532600",
+        "sourceCode": "532600",
+        "sourceName": "文山壮族苗族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-532800",
+        "sourceCode": "532800",
+        "sourceName": "西双版纳傣族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-532900",
+        "sourceCode": "532900",
+        "sourceName": "大理白族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-533100",
+        "sourceCode": "533100",
+        "sourceName": "德宏傣族景颇族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-533300",
+        "sourceCode": "533300",
+        "sourceName": "怒江傈僳族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-533400",
+        "sourceCode": "533400",
+        "sourceName": "迪庆藏族自治州",
+        "parentId": "530000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 102.062284,
+          "standardParallel": 25.18486
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-540100",
+        "sourceCode": "540100",
+        "sourceName": "拉萨市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-540200",
+        "sourceCode": "540200",
+        "sourceName": "日喀则市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-540300",
+        "sourceCode": "540300",
+        "sourceName": "昌都市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-540400",
+        "sourceCode": "540400",
+        "sourceName": "林芝市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-540500",
+        "sourceCode": "540500",
+        "sourceName": "山南市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-540600",
+        "sourceCode": "540600",
+        "sourceName": "那曲市",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-542500",
+        "sourceCode": "542500",
+        "sourceName": "阿里地区",
+        "parentId": "540000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 89.479882,
+          "standardParallel": 31.670783
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610100",
+        "sourceCode": "610100",
+        "sourceName": "西安市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610200",
+        "sourceCode": "610200",
+        "sourceName": "铜川市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610300",
+        "sourceCode": "610300",
+        "sourceName": "宝鸡市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610400",
+        "sourceCode": "610400",
+        "sourceName": "咸阳市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610500",
+        "sourceCode": "610500",
+        "sourceName": "渭南市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610600",
+        "sourceCode": "610600",
+        "sourceName": "延安市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610700",
+        "sourceCode": "610700",
+        "sourceName": "汉中市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610800",
+        "sourceCode": "610800",
+        "sourceName": "榆林市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-610900",
+        "sourceCode": "610900",
+        "sourceName": "安康市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-611000",
+        "sourceCode": "611000",
+        "sourceName": "商洛市",
+        "parentId": "610000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 109.109912,
+          "standardParallel": 35.645919
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620100",
+        "sourceCode": "620100",
+        "sourceName": "兰州市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620200",
+        "sourceCode": "620200",
+        "sourceName": "嘉峪关市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620300",
+        "sourceCode": "620300",
+        "sourceName": "金昌市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620400",
+        "sourceCode": "620400",
+        "sourceName": "白银市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620500",
+        "sourceCode": "620500",
+        "sourceName": "天水市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620600",
+        "sourceCode": "620600",
+        "sourceName": "武威市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-620700",
+        "sourceCode": "620700",
+        "sourceName": "张掖市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-620800",
+        "sourceCode": "620800",
+        "sourceName": "平凉市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-620900",
+        "sourceCode": "620900",
+        "sourceName": "酒泉市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-621000",
+        "sourceCode": "621000",
+        "sourceName": "庆阳市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-621100",
+        "sourceCode": "621100",
+        "sourceName": "定西市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-621200",
+        "sourceCode": "621200",
+        "sourceName": "陇南市",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-622900",
+        "sourceCode": "622900",
+        "sourceName": "临夏回族自治州",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-623000",
+        "sourceCode": "623000",
+        "sourceName": "甘南藏族自治州",
+        "parentId": "620000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 101.724691,
+          "standardParallel": 37.69543
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-630100",
+        "sourceCode": "630100",
+        "sourceName": "西宁市",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-630200",
+        "sourceCode": "630200",
+        "sourceName": "海东市",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-632200",
+        "sourceCode": "632200",
+        "sourceName": "海北藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-632300",
+        "sourceCode": "632300",
+        "sourceName": "黄南藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-632500",
+        "sourceCode": "632500",
+        "sourceName": "海南藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-632600",
+        "sourceCode": "632600",
+        "sourceName": "果洛藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-632700",
+        "sourceCode": "632700",
+        "sourceName": "玉树藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-632800",
+        "sourceCode": "632800",
+        "sourceName": "海西蒙古族藏族自治州",
+        "parentId": "630000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 96.189177,
+          "standardParallel": 35.406634
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-640100",
+        "sourceCode": "640100",
+        "sourceName": "银川市",
+        "parentId": "640000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 105.6614,
+          "standardParallel": 37.31314
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-640200",
+        "sourceCode": "640200",
+        "sourceName": "石嘴山市",
+        "parentId": "640000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 105.6614,
+          "standardParallel": 37.31314
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-640300",
+        "sourceCode": "640300",
+        "sourceName": "吴忠市",
+        "parentId": "640000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 105.6614,
+          "standardParallel": 37.31314
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-640400",
+        "sourceCode": "640400",
+        "sourceName": "固原市",
+        "parentId": "640000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 105.6614,
+          "standardParallel": 37.31314
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-640500",
+        "sourceCode": "640500",
+        "sourceName": "中卫市",
+        "parentId": "640000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 105.6614,
+          "standardParallel": 37.31314
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-650100",
+        "sourceCode": "650100",
+        "sourceName": "乌鲁木齐市",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-650200",
+        "sourceCode": "650200",
+        "sourceName": "克拉玛依市",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-650400",
+        "sourceCode": "650400",
+        "sourceName": "吐鲁番市",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-650500",
+        "sourceCode": "650500",
+        "sourceName": "哈密市",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地级市",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 3
+      },
+      {
+        "id": "china-652300",
+        "sourceCode": "652300",
+        "sourceName": "昌吉回族自治州",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-652700",
+        "sourceCode": "652700",
+        "sourceName": "博尔塔拉蒙古自治州",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 5
+      },
+      {
+        "id": "china-652800",
+        "sourceCode": "652800",
+        "sourceName": "巴音郭楞蒙古自治州",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 15
+      },
+      {
+        "id": "china-652900",
+        "sourceCode": "652900",
+        "sourceName": "阿克苏地区",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-653000",
+        "sourceCode": "653000",
+        "sourceName": "克孜勒苏柯尔克孜自治州",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 1
+      },
+      {
+        "id": "china-653100",
+        "sourceCode": "653100",
+        "sourceName": "喀什地区",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 2
+      },
+      {
+        "id": "china-653200",
+        "sourceCode": "653200",
+        "sourceName": "和田地区",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 15
+      },
+      {
+        "id": "china-654000",
+        "sourceCode": "654000",
+        "sourceName": "伊犁哈萨克自治州",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "自治州",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-654200",
+        "sourceCode": "654200",
+        "sourceName": "塔城地区",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 4
+      },
+      {
+        "id": "china-654300",
+        "sourceCode": "654300",
+        "sourceName": "阿勒泰地区",
+        "parentId": "650000",
+        "sourceLayer": "prefecture",
+        "sourceType": "地区",
+        "projection": {
+          "centralMeridian": 85.717229,
+          "standardParallel": 41.758707
+        },
+        "retainedRings": 2
+      }
+    ],
+    "countryMainSimplificationPx": 0.65,
+    "chinaSimplificationPx": {
+      "main": 1,
+      "context": 1.4,
+      "highlight": 1
+    }
+  },
+  "coverage": {
+    "complete": true,
+    "scope": "mainland-31-prefectures-and-municipality-counties",
+    "status": "source-snapshot-complete",
+    "note": "大陆31地区，333个地级行政区＋85个直辖市区县；按CTAmap 2026年初快照，不含普通省份的省直辖县级单位。数据覆盖校验不替代地图审核。",
+    "curation": "draft-needs-playtest"
+  },
+  "limitations": [
+    "CC BY 4.0 permits redistribution with attribution and modification notices; no endorsement implied.",
+    "Ordinary provinces contain prefecture-level units only; municipalities contain county-level units.",
+    "All nondegenerate source rings retained without relocation or independent island enlargement; numerically zero-area interior slivers are recorded in the coverage report.",
+    "Coverage is relative to the pinned source snapshot, not an official map review.",
+    "轮廓仅用于地理识别，不用于导航、测绘或界线认定。后续几何变化须重新核对审图号适用范围。"
+  ],
+  "curationStatus": "draft-needs-playtest",
+  "mapApprovalNumber": "GS(2026)4921号",
+  "mapApprovalScope": {
+    "countries": 60,
+    "chinaMainlandRegions": 418,
+    "includesLocationInsets": true,
+    "questionBankSha256": "57e28d04923158e760e50a38b4e27ba5f1ab4f2fd2a019c67696e252f3b9431d",
+    "confirmation": "用户于2026-11-08确认正式批准文件覆盖当前全部最终成图；本地未留存批准文件。"
+  }
+}

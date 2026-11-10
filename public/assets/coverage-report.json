@@ -1,0 +1,4453 @@
+{
+  "version": "2026-11-08.1",
+  "complete": true,
+  "scope": "mainland-31-prefectures-and-municipality-counties",
+  "status": "source-snapshot-complete",
+  "note": "大陆31地区，333个地级行政区＋85个直辖市区县；按CTAmap 2026年初快照，不含普通省份的省直辖县级单位。数据覆盖校验不替代地图审核。",
+  "curation": "draft-needs-playtest",
+  "countries": 60,
+  "cities": 418,
+  "prefectures": 333,
+  "municipalityCounties": 85,
+  "regions": [
+    {
+      "id": "110000",
+      "name": "北京市",
+      "kind": "municipality",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-110101",
+          "name": "东城区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110102",
+          "name": "西城区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110105",
+          "name": "朝阳区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110106",
+          "name": "丰台区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110107",
+          "name": "石景山区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110108",
+          "name": "海淀区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110109",
+          "name": "门头沟区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110111",
+          "name": "房山区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110112",
+          "name": "通州区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110113",
+          "name": "顺义区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110114",
+          "name": "昌平区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110115",
+          "name": "大兴区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110116",
+          "name": "怀柔区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110117",
+          "name": "平谷区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110118",
+          "name": "密云区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-110119",
+          "name": "延庆区",
+          "adminType": "district"
+        }
+      ]
+    },
+    {
+      "id": "120000",
+      "name": "天津市",
+      "kind": "municipality",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-120101",
+          "name": "和平区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120102",
+          "name": "河东区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120103",
+          "name": "河西区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120104",
+          "name": "南开区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120105",
+          "name": "河北区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120106",
+          "name": "红桥区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120110",
+          "name": "东丽区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120111",
+          "name": "西青区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120112",
+          "name": "津南区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120113",
+          "name": "北辰区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120114",
+          "name": "武清区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120115",
+          "name": "宝坻区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120116",
+          "name": "滨海新区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120117",
+          "name": "宁河区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120118",
+          "name": "静海区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-120119",
+          "name": "蓟州区",
+          "adminType": "district"
+        }
+      ]
+    },
+    {
+      "id": "130000",
+      "name": "河北省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 11,
+      "actualQuestions": 11,
+      "units": [
+        {
+          "id": "china-130100",
+          "name": "石家庄市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130200",
+          "name": "唐山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130300",
+          "name": "秦皇岛市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130400",
+          "name": "邯郸市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130500",
+          "name": "邢台市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130600",
+          "name": "保定市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130700",
+          "name": "张家口市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130800",
+          "name": "承德市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-130900",
+          "name": "沧州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-131000",
+          "name": "廊坊市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-131100",
+          "name": "衡水市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "140000",
+      "name": "山西省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 11,
+      "actualQuestions": 11,
+      "units": [
+        {
+          "id": "china-140100",
+          "name": "太原市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140200",
+          "name": "大同市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140300",
+          "name": "阳泉市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140400",
+          "name": "长治市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140500",
+          "name": "晋城市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140600",
+          "name": "朔州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140700",
+          "name": "晋中市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140800",
+          "name": "运城市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-140900",
+          "name": "忻州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-141000",
+          "name": "临汾市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-141100",
+          "name": "吕梁市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "150000",
+      "name": "内蒙古自治区",
+      "kind": "autonomous",
+      "complete": true,
+      "expectedQuestions": 12,
+      "actualQuestions": 12,
+      "units": [
+        {
+          "id": "china-150100",
+          "name": "呼和浩特市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150200",
+          "name": "包头市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150300",
+          "name": "乌海市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150400",
+          "name": "赤峰市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150500",
+          "name": "通辽市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150600",
+          "name": "鄂尔多斯市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150700",
+          "name": "呼伦贝尔市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150800",
+          "name": "巴彦淖尔市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-150900",
+          "name": "乌兰察布市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-152200",
+          "name": "兴安盟",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-152500",
+          "name": "锡林郭勒盟",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-152900",
+          "name": "阿拉善盟",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "210000",
+      "name": "辽宁省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 14,
+      "actualQuestions": 14,
+      "units": [
+        {
+          "id": "china-210100",
+          "name": "沈阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210200",
+          "name": "大连市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210300",
+          "name": "鞍山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210400",
+          "name": "抚顺市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210500",
+          "name": "本溪市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210600",
+          "name": "丹东市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210700",
+          "name": "锦州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210800",
+          "name": "营口市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-210900",
+          "name": "阜新市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-211000",
+          "name": "辽阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-211100",
+          "name": "盘锦市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-211200",
+          "name": "铁岭市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-211300",
+          "name": "朝阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-211400",
+          "name": "葫芦岛市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "220000",
+      "name": "吉林省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 9,
+      "actualQuestions": 9,
+      "units": [
+        {
+          "id": "china-220100",
+          "name": "长春市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220200",
+          "name": "吉林市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220300",
+          "name": "四平市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220400",
+          "name": "辽源市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220500",
+          "name": "通化市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220600",
+          "name": "白山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220700",
+          "name": "松原市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-220800",
+          "name": "白城市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-222400",
+          "name": "延边朝鲜族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "230000",
+      "name": "黑龙江省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 13,
+      "actualQuestions": 13,
+      "units": [
+        {
+          "id": "china-230100",
+          "name": "哈尔滨市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230200",
+          "name": "齐齐哈尔市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230300",
+          "name": "鸡西市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230400",
+          "name": "鹤岗市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230500",
+          "name": "双鸭山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230600",
+          "name": "大庆市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230700",
+          "name": "伊春市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230800",
+          "name": "佳木斯市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-230900",
+          "name": "七台河市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-231000",
+          "name": "牡丹江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-231100",
+          "name": "黑河市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-231200",
+          "name": "绥化市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-232700",
+          "name": "大兴安岭地区",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "310000",
+      "name": "上海市",
+      "kind": "municipality",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-310101",
+          "name": "黄浦区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310104",
+          "name": "徐汇区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310105",
+          "name": "长宁区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310106",
+          "name": "静安区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310107",
+          "name": "普陀区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310109",
+          "name": "虹口区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310110",
+          "name": "杨浦区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310112",
+          "name": "闵行区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310113",
+          "name": "宝山区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310114",
+          "name": "嘉定区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310115",
+          "name": "浦东新区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310116",
+          "name": "金山区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310117",
+          "name": "松江区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310118",
+          "name": "青浦区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310120",
+          "name": "奉贤区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-310151",
+          "name": "崇明区",
+          "adminType": "district"
+        }
+      ]
+    },
+    {
+      "id": "320000",
+      "name": "江苏省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 13,
+      "actualQuestions": 13,
+      "units": [
+        {
+          "id": "china-320100",
+          "name": "南京市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320200",
+          "name": "无锡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320300",
+          "name": "徐州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320400",
+          "name": "常州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320500",
+          "name": "苏州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320600",
+          "name": "南通市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320700",
+          "name": "连云港市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320800",
+          "name": "淮安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-320900",
+          "name": "盐城市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-321000",
+          "name": "扬州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-321100",
+          "name": "镇江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-321200",
+          "name": "泰州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-321300",
+          "name": "宿迁市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "330000",
+      "name": "浙江省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 11,
+      "actualQuestions": 11,
+      "units": [
+        {
+          "id": "china-330100",
+          "name": "杭州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330200",
+          "name": "宁波市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330300",
+          "name": "温州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330400",
+          "name": "嘉兴市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330500",
+          "name": "湖州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330600",
+          "name": "绍兴市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330700",
+          "name": "金华市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330800",
+          "name": "衢州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-330900",
+          "name": "舟山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-331000",
+          "name": "台州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-331100",
+          "name": "丽水市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "340000",
+      "name": "安徽省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-340100",
+          "name": "合肥市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340200",
+          "name": "芜湖市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340300",
+          "name": "蚌埠市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340400",
+          "name": "淮南市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340500",
+          "name": "马鞍山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340600",
+          "name": "淮北市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340700",
+          "name": "铜陵市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-340800",
+          "name": "安庆市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341000",
+          "name": "黄山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341100",
+          "name": "滁州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341200",
+          "name": "阜阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341300",
+          "name": "宿州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341500",
+          "name": "六安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341600",
+          "name": "亳州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341700",
+          "name": "池州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-341800",
+          "name": "宣城市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "350000",
+      "name": "福建省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 9,
+      "actualQuestions": 9,
+      "units": [
+        {
+          "id": "china-350100",
+          "name": "福州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350200",
+          "name": "厦门市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350300",
+          "name": "莆田市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350400",
+          "name": "三明市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350500",
+          "name": "泉州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350600",
+          "name": "漳州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350700",
+          "name": "南平市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350800",
+          "name": "龙岩市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-350900",
+          "name": "宁德市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "360000",
+      "name": "江西省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 11,
+      "actualQuestions": 11,
+      "units": [
+        {
+          "id": "china-360100",
+          "name": "南昌市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360200",
+          "name": "景德镇市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360300",
+          "name": "萍乡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360400",
+          "name": "九江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360500",
+          "name": "新余市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360600",
+          "name": "鹰潭市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360700",
+          "name": "赣州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360800",
+          "name": "吉安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-360900",
+          "name": "宜春市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-361000",
+          "name": "抚州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-361100",
+          "name": "上饶市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "370000",
+      "name": "山东省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-370100",
+          "name": "济南市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370200",
+          "name": "青岛市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370300",
+          "name": "淄博市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370400",
+          "name": "枣庄市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370500",
+          "name": "东营市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370600",
+          "name": "烟台市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370700",
+          "name": "潍坊市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370800",
+          "name": "济宁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-370900",
+          "name": "泰安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371000",
+          "name": "威海市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371100",
+          "name": "日照市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371300",
+          "name": "临沂市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371400",
+          "name": "德州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371500",
+          "name": "聊城市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371600",
+          "name": "滨州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-371700",
+          "name": "菏泽市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "410000",
+      "name": "河南省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 17,
+      "actualQuestions": 17,
+      "units": [
+        {
+          "id": "china-410100",
+          "name": "郑州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410200",
+          "name": "开封市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410300",
+          "name": "洛阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410400",
+          "name": "平顶山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410500",
+          "name": "安阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410600",
+          "name": "鹤壁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410700",
+          "name": "新乡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410800",
+          "name": "焦作市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-410900",
+          "name": "濮阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411000",
+          "name": "许昌市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411100",
+          "name": "漯河市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411200",
+          "name": "三门峡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411300",
+          "name": "南阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411400",
+          "name": "商丘市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411500",
+          "name": "信阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411600",
+          "name": "周口市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-411700",
+          "name": "驻马店市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "420000",
+      "name": "湖北省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 13,
+      "actualQuestions": 13,
+      "units": [
+        {
+          "id": "china-420100",
+          "name": "武汉市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420200",
+          "name": "黄石市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420300",
+          "name": "十堰市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420500",
+          "name": "宜昌市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420600",
+          "name": "襄阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420700",
+          "name": "鄂州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420800",
+          "name": "荆门市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-420900",
+          "name": "孝感市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-421000",
+          "name": "荆州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-421100",
+          "name": "黄冈市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-421200",
+          "name": "咸宁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-421300",
+          "name": "随州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-422800",
+          "name": "恩施土家族苗族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "430000",
+      "name": "湖南省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 14,
+      "actualQuestions": 14,
+      "units": [
+        {
+          "id": "china-430100",
+          "name": "长沙市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430200",
+          "name": "株洲市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430300",
+          "name": "湘潭市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430400",
+          "name": "衡阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430500",
+          "name": "邵阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430600",
+          "name": "岳阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430700",
+          "name": "常德市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430800",
+          "name": "张家界市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-430900",
+          "name": "益阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-431000",
+          "name": "郴州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-431100",
+          "name": "永州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-431200",
+          "name": "怀化市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-431300",
+          "name": "娄底市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-433100",
+          "name": "湘西土家族苗族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "440000",
+      "name": "广东省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 21,
+      "actualQuestions": 21,
+      "units": [
+        {
+          "id": "china-440100",
+          "name": "广州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440200",
+          "name": "韶关市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440300",
+          "name": "深圳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440400",
+          "name": "珠海市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440500",
+          "name": "汕头市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440600",
+          "name": "佛山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440700",
+          "name": "江门市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440800",
+          "name": "湛江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-440900",
+          "name": "茂名市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441200",
+          "name": "肇庆市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441300",
+          "name": "惠州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441400",
+          "name": "梅州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441500",
+          "name": "汕尾市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441600",
+          "name": "河源市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441700",
+          "name": "阳江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441800",
+          "name": "清远市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-441900",
+          "name": "东莞市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-442000",
+          "name": "中山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-445100",
+          "name": "潮州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-445200",
+          "name": "揭阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-445300",
+          "name": "云浮市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "450000",
+      "name": "广西壮族自治区",
+      "kind": "autonomous",
+      "complete": true,
+      "expectedQuestions": 14,
+      "actualQuestions": 14,
+      "units": [
+        {
+          "id": "china-450100",
+          "name": "南宁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450200",
+          "name": "柳州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450300",
+          "name": "桂林市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450400",
+          "name": "梧州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450500",
+          "name": "北海市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450600",
+          "name": "防城港市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450700",
+          "name": "钦州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450800",
+          "name": "贵港市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-450900",
+          "name": "玉林市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-451000",
+          "name": "百色市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-451100",
+          "name": "贺州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-451200",
+          "name": "河池市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-451300",
+          "name": "来宾市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-451400",
+          "name": "崇左市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "460000",
+      "name": "海南省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 4,
+      "actualQuestions": 4,
+      "units": [
+        {
+          "id": "china-460100",
+          "name": "海口市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-460200",
+          "name": "三亚市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-460300",
+          "name": "三沙市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-460400",
+          "name": "儋州市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "500000",
+      "name": "重庆市",
+      "kind": "municipality",
+      "complete": true,
+      "expectedQuestions": 37,
+      "actualQuestions": 37,
+      "units": [
+        {
+          "id": "china-500101",
+          "name": "万州区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500102",
+          "name": "涪陵区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500103",
+          "name": "渝中区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500104",
+          "name": "大渡口区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500106",
+          "name": "沙坪坝区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500107",
+          "name": "九龙坡区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500108",
+          "name": "南岸区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500109",
+          "name": "北碚区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500110",
+          "name": "綦江区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500111",
+          "name": "大足区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500113",
+          "name": "巴南区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500114",
+          "name": "黔江区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500115",
+          "name": "长寿区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500116",
+          "name": "江津区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500117",
+          "name": "合川区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500118",
+          "name": "永川区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500119",
+          "name": "南川区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500120",
+          "name": "璧山区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500151",
+          "name": "铜梁区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500152",
+          "name": "潼南区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500153",
+          "name": "荣昌区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500154",
+          "name": "开州区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500155",
+          "name": "梁平区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500156",
+          "name": "武隆区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500157",
+          "name": "两江新区",
+          "adminType": "district"
+        },
+        {
+          "id": "china-500229",
+          "name": "城口县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500230",
+          "name": "丰都县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500231",
+          "name": "垫江县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500233",
+          "name": "忠县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500235",
+          "name": "云阳县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500236",
+          "name": "奉节县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500237",
+          "name": "巫山县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500238",
+          "name": "巫溪县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500240",
+          "name": "石柱土家族自治县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500241",
+          "name": "秀山土家族苗族自治县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500242",
+          "name": "酉阳土家族苗族自治县",
+          "adminType": "county"
+        },
+        {
+          "id": "china-500243",
+          "name": "彭水苗族土家族自治县",
+          "adminType": "county"
+        }
+      ]
+    },
+    {
+      "id": "510000",
+      "name": "四川省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 21,
+      "actualQuestions": 21,
+      "units": [
+        {
+          "id": "china-510100",
+          "name": "成都市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510300",
+          "name": "自贡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510400",
+          "name": "攀枝花市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510500",
+          "name": "泸州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510600",
+          "name": "德阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510700",
+          "name": "绵阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510800",
+          "name": "广元市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-510900",
+          "name": "遂宁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511000",
+          "name": "内江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511100",
+          "name": "乐山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511300",
+          "name": "南充市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511400",
+          "name": "眉山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511500",
+          "name": "宜宾市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511600",
+          "name": "广安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511700",
+          "name": "达州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511800",
+          "name": "雅安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-511900",
+          "name": "巴中市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-512000",
+          "name": "资阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-513200",
+          "name": "阿坝藏族羌族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-513300",
+          "name": "甘孜藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-513400",
+          "name": "凉山彝族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "520000",
+      "name": "贵州省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 9,
+      "actualQuestions": 9,
+      "units": [
+        {
+          "id": "china-520100",
+          "name": "贵阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-520200",
+          "name": "六盘水市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-520300",
+          "name": "遵义市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-520400",
+          "name": "安顺市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-520500",
+          "name": "毕节市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-520600",
+          "name": "铜仁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-522300",
+          "name": "黔西南布依族苗族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-522600",
+          "name": "黔东南苗族侗族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-522700",
+          "name": "黔南布依族苗族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "530000",
+      "name": "云南省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 16,
+      "actualQuestions": 16,
+      "units": [
+        {
+          "id": "china-530100",
+          "name": "昆明市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530300",
+          "name": "曲靖市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530400",
+          "name": "玉溪市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530500",
+          "name": "保山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530600",
+          "name": "昭通市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530700",
+          "name": "丽江市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530800",
+          "name": "普洱市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-530900",
+          "name": "临沧市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-532300",
+          "name": "楚雄彝族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-532500",
+          "name": "红河哈尼族彝族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-532600",
+          "name": "文山壮族苗族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-532800",
+          "name": "西双版纳傣族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-532900",
+          "name": "大理白族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-533100",
+          "name": "德宏傣族景颇族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-533300",
+          "name": "怒江傈僳族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-533400",
+          "name": "迪庆藏族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "540000",
+      "name": "西藏自治区",
+      "kind": "autonomous",
+      "complete": true,
+      "expectedQuestions": 7,
+      "actualQuestions": 7,
+      "units": [
+        {
+          "id": "china-540100",
+          "name": "拉萨市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-540200",
+          "name": "日喀则市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-540300",
+          "name": "昌都市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-540400",
+          "name": "林芝市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-540500",
+          "name": "山南市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-540600",
+          "name": "那曲市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-542500",
+          "name": "阿里地区",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "610000",
+      "name": "陕西省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 10,
+      "actualQuestions": 10,
+      "units": [
+        {
+          "id": "china-610100",
+          "name": "西安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610200",
+          "name": "铜川市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610300",
+          "name": "宝鸡市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610400",
+          "name": "咸阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610500",
+          "name": "渭南市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610600",
+          "name": "延安市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610700",
+          "name": "汉中市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610800",
+          "name": "榆林市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-610900",
+          "name": "安康市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-611000",
+          "name": "商洛市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "620000",
+      "name": "甘肃省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 14,
+      "actualQuestions": 14,
+      "units": [
+        {
+          "id": "china-620100",
+          "name": "兰州市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620200",
+          "name": "嘉峪关市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620300",
+          "name": "金昌市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620400",
+          "name": "白银市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620500",
+          "name": "天水市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620600",
+          "name": "武威市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620700",
+          "name": "张掖市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620800",
+          "name": "平凉市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-620900",
+          "name": "酒泉市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-621000",
+          "name": "庆阳市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-621100",
+          "name": "定西市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-621200",
+          "name": "陇南市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-622900",
+          "name": "临夏回族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-623000",
+          "name": "甘南藏族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "630000",
+      "name": "青海省",
+      "kind": "province",
+      "complete": true,
+      "expectedQuestions": 8,
+      "actualQuestions": 8,
+      "units": [
+        {
+          "id": "china-630100",
+          "name": "西宁市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-630200",
+          "name": "海东市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-632200",
+          "name": "海北藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-632300",
+          "name": "黄南藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-632500",
+          "name": "海南藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-632600",
+          "name": "果洛藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-632700",
+          "name": "玉树藏族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-632800",
+          "name": "海西蒙古族藏族自治州",
+          "adminType": "prefecture"
+        }
+      ]
+    },
+    {
+      "id": "640000",
+      "name": "宁夏回族自治区",
+      "kind": "autonomous",
+      "complete": true,
+      "expectedQuestions": 5,
+      "actualQuestions": 5,
+      "units": [
+        {
+          "id": "china-640100",
+          "name": "银川市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-640200",
+          "name": "石嘴山市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-640300",
+          "name": "吴忠市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-640400",
+          "name": "固原市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-640500",
+          "name": "中卫市",
+          "adminType": "city"
+        }
+      ]
+    },
+    {
+      "id": "650000",
+      "name": "新疆维吾尔自治区",
+      "kind": "autonomous",
+      "complete": true,
+      "expectedQuestions": 14,
+      "actualQuestions": 14,
+      "units": [
+        {
+          "id": "china-650100",
+          "name": "乌鲁木齐市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-650200",
+          "name": "克拉玛依市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-650400",
+          "name": "吐鲁番市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-650500",
+          "name": "哈密市",
+          "adminType": "city"
+        },
+        {
+          "id": "china-652300",
+          "name": "昌吉回族自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-652700",
+          "name": "博尔塔拉蒙古自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-652800",
+          "name": "巴音郭楞蒙古自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-652900",
+          "name": "阿克苏地区",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-653000",
+          "name": "克孜勒苏柯尔克孜自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-653100",
+          "name": "喀什地区",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-653200",
+          "name": "和田地区",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-654000",
+          "name": "伊犁哈萨克自治州",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-654200",
+          "name": "塔城地区",
+          "adminType": "prefecture"
+        },
+        {
+          "id": "china-654300",
+          "name": "阿勒泰地区",
+          "adminType": "prefecture"
+        }
+      ]
+    }
+  ],
+  "excludedPrefectureRows": [
+    {
+      "code": "659002",
+      "name": "阿拉尔市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "820000",
+      "name": "澳门特别行政区",
+      "regionId": "820000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469025",
+      "name": "白沙黎族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469029",
+      "name": "保亭黎族苗族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "110000",
+      "name": "北京市",
+      "regionId": "110000",
+      "sourceType": "不统计",
+      "reason": "Municipality parent placeholder"
+    },
+    {
+      "code": "659005",
+      "name": "北屯市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469026",
+      "name": "昌江黎族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469023",
+      "name": "澄迈县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469021",
+      "name": "定安县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469007",
+      "name": "东方市",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659010",
+      "name": "胡杨河市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "419001",
+      "name": "济源市",
+      "regionId": "410000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659008",
+      "name": "可克达拉市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659009",
+      "name": "昆玉市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469027",
+      "name": "乐东黎族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469024",
+      "name": "临高县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469028",
+      "name": "陵水黎族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "429005",
+      "name": "潜江市",
+      "regionId": "420000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469002",
+      "name": "琼海市",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469030",
+      "name": "琼中黎族苗族自治县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "310000",
+      "name": "上海市",
+      "regionId": "310000",
+      "sourceType": "不统计",
+      "reason": "Municipality parent placeholder"
+    },
+    {
+      "code": "429021",
+      "name": "神农架林区",
+      "regionId": "420000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659001",
+      "name": "石河子市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659007",
+      "name": "双河市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "120000",
+      "name": "天津市",
+      "regionId": "120000",
+      "sourceType": "不统计",
+      "reason": "Municipality parent placeholder"
+    },
+    {
+      "code": "429006",
+      "name": "天门市",
+      "regionId": "420000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469022",
+      "name": "屯昌县",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469006",
+      "name": "万宁市",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469005",
+      "name": "文昌市",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659004",
+      "name": "五家渠市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "469001",
+      "name": "五指山市",
+      "regionId": "460000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "429004",
+      "name": "仙桃市",
+      "regionId": "420000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "810000",
+      "name": "香港特别行政区",
+      "regionId": "810000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "500000",
+      "name": "重庆市",
+      "regionId": "500000",
+      "sourceType": "不统计",
+      "reason": "Municipality parent placeholder"
+    },
+    {
+      "code": "659011",
+      "name": "新星市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659012",
+      "name": "白杨市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "710000",
+      "name": "台湾省",
+      "regionId": "710000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659006",
+      "name": "铁门关市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    },
+    {
+      "code": "659003",
+      "name": "图木舒克市",
+      "regionId": "650000",
+      "sourceType": "不统计",
+      "reason": "Outside selected prefecture scope: directly administered county-level unit"
+    }
+  ],
+  "degenerateSourceInteriors": [
+    {
+      "feature": "440000",
+      "ringIndex": 1,
+      "areaDegreesSquared": 1.7488304209384396e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 2,
+      "areaDegreesSquared": 1.0846574526946536e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 3,
+      "areaDegreesSquared": 4.634223133546684e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 4,
+      "areaDegreesSquared": 1.788758884055711e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 5,
+      "areaDegreesSquared": 9.620949482234471e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 6,
+      "areaDegreesSquared": 5.549294337361958e-20,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 7,
+      "areaDegreesSquared": 2.968330534971813e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 8,
+      "areaDegreesSquared": 2.6988009234683865e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 9,
+      "areaDegreesSquared": 1.183623988158458e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 10,
+      "areaDegreesSquared": 5.7477538218308685e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 11,
+      "areaDegreesSquared": 6.907818382654836e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 12,
+      "areaDegreesSquared": 4.060464190900302e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 13,
+      "areaDegreesSquared": 1.1245887034105895e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 14,
+      "areaDegreesSquared": 2.4526897778932334e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 15,
+      "areaDegreesSquared": 1.7060765570028706e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 16,
+      "areaDegreesSquared": 4.329873927067755e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 17,
+      "areaDegreesSquared": 2.6437546255384705e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 18,
+      "areaDegreesSquared": 1.0597440961335365e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 19,
+      "areaDegreesSquared": 1.7133846977147766e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 20,
+      "areaDegreesSquared": 2.715071468195054e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 21,
+      "areaDegreesSquared": 3.2198832524239155e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 22,
+      "areaDegreesSquared": 3.5579288077171865e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 23,
+      "areaDegreesSquared": 1.3137083965220173e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 24,
+      "areaDegreesSquared": 4.482366007971749e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 25,
+      "areaDegreesSquared": 1.0614122712748722e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 26,
+      "areaDegreesSquared": 2.49175907940635e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 27,
+      "areaDegreesSquared": 8.990133204815418e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 28,
+      "areaDegreesSquared": 1.989468634863538e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 29,
+      "areaDegreesSquared": 4.945691375758626e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 30,
+      "areaDegreesSquared": 4.6917763753346535e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 31,
+      "areaDegreesSquared": 2.9925905637065946e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 32,
+      "areaDegreesSquared": 8.573042318856142e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 33,
+      "areaDegreesSquared": 1.1940199940970245e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 34,
+      "areaDegreesSquared": 3.315032845669155e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 35,
+      "areaDegreesSquared": 4.467421170408631e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 36,
+      "areaDegreesSquared": 3.262036376439618e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 37,
+      "areaDegreesSquared": 2.5586086009694235e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 38,
+      "areaDegreesSquared": 2.284084312865631e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 39,
+      "areaDegreesSquared": 1.3446664581274269e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 40,
+      "areaDegreesSquared": 5.787263276608851e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 41,
+      "areaDegreesSquared": 2.807808341029599e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 42,
+      "areaDegreesSquared": 2.1969837938354494e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 43,
+      "areaDegreesSquared": 3.0908968819756536e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 44,
+      "areaDegreesSquared": 7.969835571111668e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 45,
+      "areaDegreesSquared": 5.815694657477926e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 46,
+      "areaDegreesSquared": 1.203550037738565e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 47,
+      "areaDegreesSquared": 5.6268928081695205e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 48,
+      "areaDegreesSquared": 1.1560305664126691e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 49,
+      "areaDegreesSquared": 5.66463871388154e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 50,
+      "areaDegreesSquared": 2.3563397801430568e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 51,
+      "areaDegreesSquared": 1.5521547886190033e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 52,
+      "areaDegreesSquared": 1.2247249384349929e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 53,
+      "areaDegreesSquared": 4.611247364852411e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 54,
+      "areaDegreesSquared": 1.721650713576019e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 55,
+      "areaDegreesSquared": 4.603179376029814e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 56,
+      "areaDegreesSquared": 2.6734053881240227e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 57,
+      "areaDegreesSquared": 3.2271955290388843e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 58,
+      "areaDegreesSquared": 3.2997475405659103e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 59,
+      "areaDegreesSquared": 1.1675995180545171e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 60,
+      "areaDegreesSquared": 1.4459745764692464e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 61,
+      "areaDegreesSquared": 1.3659233455088146e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 62,
+      "areaDegreesSquared": 2.9906715046854716e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 63,
+      "areaDegreesSquared": 4.672491817405837e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 64,
+      "areaDegreesSquared": 3.7246371340098985e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 65,
+      "areaDegreesSquared": 3.187846547299737e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 66,
+      "areaDegreesSquared": 1.0486358876875619e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 67,
+      "areaDegreesSquared": 1.2938451016776283e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 68,
+      "areaDegreesSquared": 8.311907841626848e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 69,
+      "areaDegreesSquared": 8.820802806857689e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 70,
+      "areaDegreesSquared": 6.00040857730366e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 71,
+      "areaDegreesSquared": 8.515222218747481e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 72,
+      "areaDegreesSquared": 5.673321616654606e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 73,
+      "areaDegreesSquared": 9.84802851763127e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 74,
+      "areaDegreesSquared": 2.2517080121337015e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 75,
+      "areaDegreesSquared": 1.3974455442919854e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 76,
+      "areaDegreesSquared": 8.473421142800482e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 77,
+      "areaDegreesSquared": 7.020607375311218e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 78,
+      "areaDegreesSquared": 3.0413398319141543e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 79,
+      "areaDegreesSquared": 1.3069294859660227e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 80,
+      "areaDegreesSquared": 9.9724563777148e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 81,
+      "areaDegreesSquared": 2.373702301200545e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 82,
+      "areaDegreesSquared": 7.250498217329935e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 83,
+      "areaDegreesSquared": 4.2716951550891654e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 84,
+      "areaDegreesSquared": 1.850376629567871e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 85,
+      "areaDegreesSquared": 2.1628126040301504e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 86,
+      "areaDegreesSquared": 5.878408653944844e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 87,
+      "areaDegreesSquared": 8.421651547855483e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 88,
+      "areaDegreesSquared": 6.707773023315012e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 89,
+      "areaDegreesSquared": 3.571368838309948e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 90,
+      "areaDegreesSquared": 4.1468549340753405e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 91,
+      "areaDegreesSquared": 5.224038644499455e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 92,
+      "areaDegreesSquared": 3.4741784250574175e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 93,
+      "areaDegreesSquared": 1.3520667077835317e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 94,
+      "areaDegreesSquared": 3.2662938501723864e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 95,
+      "areaDegreesSquared": 8.639166736358022e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 96,
+      "areaDegreesSquared": 1.6494510809899406e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 97,
+      "areaDegreesSquared": 4.846748993968708e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 98,
+      "areaDegreesSquared": 1.697424247795566e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 99,
+      "areaDegreesSquared": 2.8601523301919544e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 100,
+      "areaDegreesSquared": 3.1683753889761765e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 101,
+      "areaDegreesSquared": 3.0974936089905696e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 102,
+      "areaDegreesSquared": 5.301910089109687e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 103,
+      "areaDegreesSquared": 5.276181463336838e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 104,
+      "areaDegreesSquared": 9.3781370337628e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 105,
+      "areaDegreesSquared": 1.0764941726654903e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 106,
+      "areaDegreesSquared": 6.1096354136554675e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 107,
+      "areaDegreesSquared": 2.0863314845934975e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 108,
+      "areaDegreesSquared": 1.0738392537714401e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 109,
+      "areaDegreesSquared": 1.9159289696851235e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 110,
+      "areaDegreesSquared": 1.4748531060146977e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 111,
+      "areaDegreesSquared": 2.8006297368016186e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 112,
+      "areaDegreesSquared": 1.1434051432871497e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 113,
+      "areaDegreesSquared": 3.290723000082957e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 114,
+      "areaDegreesSquared": 4.1200599024523644e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 115,
+      "areaDegreesSquared": 2.5878127088039757e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 116,
+      "areaDegreesSquared": 2.4836885367847806e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 117,
+      "areaDegreesSquared": 8.1220285320153e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 118,
+      "areaDegreesSquared": 2.8697058149122864e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 119,
+      "areaDegreesSquared": 1.747076992556518e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 120,
+      "areaDegreesSquared": 7.924827019621433e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 121,
+      "areaDegreesSquared": 8.020502492577596e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 122,
+      "areaDegreesSquared": 4.805937970496873e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 123,
+      "areaDegreesSquared": 4.861997241380511e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 124,
+      "areaDegreesSquared": 3.756760527662273e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 125,
+      "areaDegreesSquared": 1.3100635078708636e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 126,
+      "areaDegreesSquared": 1.1753760048345693e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 127,
+      "areaDegreesSquared": 1.8966126480207852e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 128,
+      "areaDegreesSquared": 3.359941473741394e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 129,
+      "areaDegreesSquared": 4.655471749121946e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 130,
+      "areaDegreesSquared": 7.392852278437555e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 131,
+      "areaDegreesSquared": 9.075799211152218e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 132,
+      "areaDegreesSquared": 3.442818353674307e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 133,
+      "areaDegreesSquared": 3.4687267143235956e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 134,
+      "areaDegreesSquared": 2.4237845414807685e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 135,
+      "areaDegreesSquared": 8.107799371118163e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 136,
+      "areaDegreesSquared": 6.3739758676478134e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 137,
+      "areaDegreesSquared": 3.3595378096024683e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 138,
+      "areaDegreesSquared": 1.3013456859590448e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 139,
+      "areaDegreesSquared": 1.1885566315872342e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 140,
+      "areaDegreesSquared": 2.097802825328383e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 141,
+      "areaDegreesSquared": 6.602383595830856e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 142,
+      "areaDegreesSquared": 1.0949819902282955e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 143,
+      "areaDegreesSquared": 2.2296090928550325e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 144,
+      "areaDegreesSquared": 1.995343298029129e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 145,
+      "areaDegreesSquared": 2.8757476234915756e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 146,
+      "areaDegreesSquared": 4.075101979020041e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 147,
+      "areaDegreesSquared": 1.91103867790371e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 148,
+      "areaDegreesSquared": 1.5623125665411544e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 149,
+      "areaDegreesSquared": 4.337094563561716e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 150,
+      "areaDegreesSquared": 1.390325173579129e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 151,
+      "areaDegreesSquared": 5.168927570751987e-20,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 152,
+      "areaDegreesSquared": 4.787906673914136e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 153,
+      "areaDegreesSquared": 1.971654473191596e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 154,
+      "areaDegreesSquared": 3.5034738536315955e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 155,
+      "areaDegreesSquared": 1.459060134320135e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 156,
+      "areaDegreesSquared": 1.7369337025735488e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 157,
+      "areaDegreesSquared": 9.018862715228968e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 158,
+      "areaDegreesSquared": 4.65569012480366e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 159,
+      "areaDegreesSquared": 2.4058604015419643e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 160,
+      "areaDegreesSquared": 4.989590678047428e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 161,
+      "areaDegreesSquared": 1.168773118312926e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 162,
+      "areaDegreesSquared": 2.9434394917086937e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 163,
+      "areaDegreesSquared": 2.3145903202662803e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 164,
+      "areaDegreesSquared": 9.872890301743017e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 165,
+      "areaDegreesSquared": 2.1893525285477918e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 166,
+      "areaDegreesSquared": 2.3602996591714706e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 167,
+      "areaDegreesSquared": 5.237773813134775e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 168,
+      "areaDegreesSquared": 1.2029299907446547e-20,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 169,
+      "areaDegreesSquared": 1.1805649656857815e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 170,
+      "areaDegreesSquared": 3.0166598651706626e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 171,
+      "areaDegreesSquared": 3.37298048717319e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 172,
+      "areaDegreesSquared": 6.917311936160694e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 173,
+      "areaDegreesSquared": 4.5655019198366e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 174,
+      "areaDegreesSquared": 2.948267579508043e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 175,
+      "areaDegreesSquared": 8.126503579129212e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 176,
+      "areaDegreesSquared": 2.391220332213193e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 177,
+      "areaDegreesSquared": 9.592131139772106e-20,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 178,
+      "areaDegreesSquared": 1.804242099814743e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 179,
+      "areaDegreesSquared": 4.5705897833842046e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 180,
+      "areaDegreesSquared": 3.49728861060123e-20,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 181,
+      "areaDegreesSquared": 6.812858048333749e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 182,
+      "areaDegreesSquared": 5.965576946895682e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 183,
+      "areaDegreesSquared": 1.6695361015975244e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 184,
+      "areaDegreesSquared": 1.2027238019617575e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 185,
+      "areaDegreesSquared": 1.4302472662747728e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 186,
+      "areaDegreesSquared": 1.121742672707815e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 187,
+      "areaDegreesSquared": 6.674489373709668e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 188,
+      "areaDegreesSquared": 8.86474889877132e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 189,
+      "areaDegreesSquared": 6.060020293333924e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 190,
+      "areaDegreesSquared": 4.526174768758989e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 191,
+      "areaDegreesSquared": 4.10098703890428e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 192,
+      "areaDegreesSquared": 1.8569926819129653e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 193,
+      "areaDegreesSquared": 1.3500308322806641e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 194,
+      "areaDegreesSquared": 6.39703903334563e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 195,
+      "areaDegreesSquared": 1.6807549040913974e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 196,
+      "areaDegreesSquared": 3.7311735152102926e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 197,
+      "areaDegreesSquared": 2.3760184069156933e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 198,
+      "areaDegreesSquared": 1.990409552810317e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 199,
+      "areaDegreesSquared": 4.00036852678159e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 200,
+      "areaDegreesSquared": 5.608035737181272e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 201,
+      "areaDegreesSquared": 1.9928620606084755e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 202,
+      "areaDegreesSquared": 1.0106446402058589e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 203,
+      "areaDegreesSquared": 2.1839619579319062e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 204,
+      "areaDegreesSquared": 3.3318259092588915e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 205,
+      "areaDegreesSquared": 5.648493749371355e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 206,
+      "areaDegreesSquared": 5.728060305807206e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 207,
+      "areaDegreesSquared": 1.1496751723303017e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 208,
+      "areaDegreesSquared": 1.2362415879879308e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 209,
+      "areaDegreesSquared": 1.0038356864500164e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 210,
+      "areaDegreesSquared": 7.918656913996278e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 211,
+      "areaDegreesSquared": 1.396926736611792e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 212,
+      "areaDegreesSquared": 1.435064395061917e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 213,
+      "areaDegreesSquared": 1.2991512585120028e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 214,
+      "areaDegreesSquared": 1.6604524177007733e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 215,
+      "areaDegreesSquared": 6.176670130496765e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 216,
+      "areaDegreesSquared": 8.706228148353326e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 217,
+      "areaDegreesSquared": 3.885326894165675e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 218,
+      "areaDegreesSquared": 7.656254111825307e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 219,
+      "areaDegreesSquared": 5.883879872489411e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 220,
+      "areaDegreesSquared": 1.5980168871038167e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 221,
+      "areaDegreesSquared": 1.4578032592287547e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 222,
+      "areaDegreesSquared": 5.5381661069446326e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 223,
+      "areaDegreesSquared": 1.9262372944787594e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 224,
+      "areaDegreesSquared": 1.273042021413041e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 225,
+      "areaDegreesSquared": 2.2087415903668568e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 226,
+      "areaDegreesSquared": 1.3366870934679704e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 227,
+      "areaDegreesSquared": 2.6067438951751093e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 228,
+      "areaDegreesSquared": 1.4092245962147405e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 229,
+      "areaDegreesSquared": 7.593862130371616e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 230,
+      "areaDegreesSquared": 3.7382111678618937e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 231,
+      "areaDegreesSquared": 5.073874178611987e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 232,
+      "areaDegreesSquared": 1.436313768659117e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 233,
+      "areaDegreesSquared": 1.051515303399859e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 234,
+      "areaDegreesSquared": 1.3762591326987872e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 235,
+      "areaDegreesSquared": 1.1080693110078645e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 236,
+      "areaDegreesSquared": 1.5167067906486558e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 237,
+      "areaDegreesSquared": 1.5473439061763948e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 238,
+      "areaDegreesSquared": 1.265128410019023e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 239,
+      "areaDegreesSquared": 1.0327380966997521e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 240,
+      "areaDegreesSquared": 3.691030770955339e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 241,
+      "areaDegreesSquared": 7.28380572002918e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 242,
+      "areaDegreesSquared": 2.795956497212939e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 243,
+      "areaDegreesSquared": 4.3966092160181713e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 244,
+      "areaDegreesSquared": 9.29082232984354e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 245,
+      "areaDegreesSquared": 7.798642271537694e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 246,
+      "areaDegreesSquared": 2.0704827040569815e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 247,
+      "areaDegreesSquared": 6.669908003594785e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 248,
+      "areaDegreesSquared": 2.3923998917666934e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 249,
+      "areaDegreesSquared": 2.4751926347489507e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 250,
+      "areaDegreesSquared": 1.2391475059935207e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 251,
+      "areaDegreesSquared": 6.525281296873712e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 252,
+      "areaDegreesSquared": 8.175372445415274e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 253,
+      "areaDegreesSquared": 2.332601681796255e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 254,
+      "areaDegreesSquared": 8.01710648742663e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 255,
+      "areaDegreesSquared": 1.3802756606340742e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 256,
+      "areaDegreesSquared": 3.092232710810267e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 257,
+      "areaDegreesSquared": 2.8413240450890224e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 258,
+      "areaDegreesSquared": 9.558899158662788e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 259,
+      "areaDegreesSquared": 3.2639157307913383e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 260,
+      "areaDegreesSquared": 1.3916129197133603e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 261,
+      "areaDegreesSquared": 3.0481260834557472e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 262,
+      "areaDegreesSquared": 1.1328503311917734e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 263,
+      "areaDegreesSquared": 7.661131084325211e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 264,
+      "areaDegreesSquared": 2.705605687035924e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 265,
+      "areaDegreesSquared": 3.2945302804038363e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 266,
+      "areaDegreesSquared": 7.03312631928927e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 267,
+      "areaDegreesSquared": 9.022232111053993e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 268,
+      "areaDegreesSquared": 4.134613720491403e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 269,
+      "areaDegreesSquared": 1.8339110341002857e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 270,
+      "areaDegreesSquared": 5.25742266140536e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 271,
+      "areaDegreesSquared": 1.2432326083324993e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 272,
+      "areaDegreesSquared": 1.5282864920437856e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 273,
+      "areaDegreesSquared": 3.9425950895145586e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 274,
+      "areaDegreesSquared": 2.0058421782959814e-19,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 275,
+      "areaDegreesSquared": 4.311702103989808e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 276,
+      "areaDegreesSquared": 2.4850595374763648e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 277,
+      "areaDegreesSquared": 1.0840461907789014e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 278,
+      "areaDegreesSquared": 1.5657010204580513e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 279,
+      "areaDegreesSquared": 8.54576834440784e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 280,
+      "areaDegreesSquared": 2.6441827514437494e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 281,
+      "areaDegreesSquared": 5.4860312290411304e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 282,
+      "areaDegreesSquared": 1.4454020301442975e-16,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 283,
+      "areaDegreesSquared": 8.210054535732657e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 284,
+      "areaDegreesSquared": 1.9005152861508104e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 285,
+      "areaDegreesSquared": 4.785105528475984e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 286,
+      "areaDegreesSquared": 2.23784460101897e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 287,
+      "areaDegreesSquared": 1.875489763898631e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 288,
+      "areaDegreesSquared": 1.516008981083906e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 289,
+      "areaDegreesSquared": 1.9179049387323902e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 290,
+      "areaDegreesSquared": 1.3221681380827196e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 291,
+      "areaDegreesSquared": 1.2540786005242946e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 292,
+      "areaDegreesSquared": 1.8910010547452255e-17,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    },
+    {
+      "feature": "440000",
+      "ringIndex": 293,
+      "areaDegreesSquared": 9.303651073963625e-18,
+      "reason": "Numerically zero-area interior ring (< 0.00013 square metres at equator)"
+    }
+  ],
+  "source": "https://www.shengshixian.com/pages/d35ae5/",
+  "snapshot": "2026-01-01",
+  "administrativeReview": "Counts and source identifiers checked; not a current official registry certification",
+  "chongqingChangeEvidence": "https://www.cq.gov.cn/zwgk/zfxxgkml/zfgb/2025/d16q/202511/t20251124_15183601.html"
+}

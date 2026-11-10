@@ -1,0 +1,415 @@
+{
+  "purpose": "宣传片真实状态素材（非连续录屏）；同一局真实游戏，按分镜顺序截取。",
+  "seed": 61,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "dpr": 3,
+  "platform": "darwin",
+  "shots": [
+    {
+      "id": "home",
+      "file": "captures/home.png",
+      "sha256": "1ee37128a3c8d3d49ec07362a6ce2beb270508c07f651e8c2ee34300205fcb07",
+      "clock": 1794283201000,
+      "boxes": [
+        {
+          "cls": "region-trigger",
+          "text": "31 道轮廓 · 猜省级行政区全部地区更换",
+          "x": 24,
+          "y": 660.15625,
+          "w": 342,
+          "h": 56.890625
+        },
+        {
+          "cls": "primary-button start-button",
+          "text": "开始猜",
+          "x": 24,
+          "y": 762.046875,
+          "w": 342,
+          "h": 56
+        }
+      ]
+    },
+    {
+      "id": "picker",
+      "file": "captures/picker.png",
+      "sha256": "0a5089eeabcb9924f6ee0e6929f035f176f61d75c4f1dfc05b16780d8e4b1a0c",
+      "clock": 1794283201400,
+      "boxes": [
+        {
+          "cls": "region-trigger",
+          "text": "31 道轮廓 · 猜省级行政区全部地区更换",
+          "x": 24,
+          "y": 660.15625,
+          "w": 342,
+          "h": 56.890625
+        },
+        {
+          "cls": "primary-button start-button",
+          "text": "开始猜",
+          "x": 24,
+          "y": 762.046875,
+          "w": 342,
+          "h": 56
+        },
+        {
+          "cls": "region-option region-option--all",
+          "text": "全部地区猜省级行政区 · 31 道题",
+          "x": 24,
+          "y": 259.96875,
+          "w": 342,
+          "h": 64
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "file": "captures/q1.png",
+      "sha256": "ec11b7b100a70d2c87d83585f58bb8e0a01431cd97f1ee73711b4290babca57f",
+      "clock": 1794283202200,
+      "boxes": [
+        {
+          "cls": "game-topline",
+          "text": "已认出0个地区",
+          "x": 24,
+          "y": 70,
+          "w": 342,
+          "h": 58
+        },
+        {
+          "cls": "map-card question-map",
+          "text": "审图号：GS(2026)4921号",
+          "x": 24,
+          "y": 242,
+          "w": 342,
+          "h": 332
+        },
+        {
+          "cls": "feedback-line",
+          "text": "不用着急，选一个你觉得对的。",
+          "x": 24,
+          "y": 599.40625,
+          "w": 342,
+          "h": 41
+        },
+        {
+          "cls": "answer-button",
+          "text": "A新疆维吾尔自治区",
+          "x": 24,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "B山东省",
+          "x": 200,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "C安徽省",
+          "x": 24,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "D四川省",
+          "x": 200,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        }
+      ],
+      "question": "山东省",
+      "choices": [
+        "新疆维吾尔自治区",
+        "山东省",
+        "安徽省",
+        "四川省"
+      ],
+      "score": "0",
+      "lives": "剩余3次机会"
+    },
+    {
+      "id": "q1-correct",
+      "file": "captures/q1-correct.png",
+      "sha256": "724abb7dd3fa830accad501a06df9fb069fc4a81f7f695e9d38e23ac753013f6",
+      "clock": 1794283202350,
+      "boxes": [
+        {
+          "cls": "game-topline",
+          "text": "已认出1+1个地区",
+          "x": 24,
+          "y": 70,
+          "w": 342,
+          "h": 58
+        },
+        {
+          "cls": "map-card map-card--flash question-map",
+          "text": "审图号：GS(2026)4921号",
+          "x": 24,
+          "y": 242,
+          "w": 342,
+          "h": 332
+        },
+        {
+          "cls": "feedback-line",
+          "text": "认出来了！+1",
+          "x": 24,
+          "y": 599.40625,
+          "w": 342,
+          "h": 41
+        },
+        {
+          "cls": "answer-button is-dim",
+          "text": "A新疆维吾尔自治区",
+          "x": 24,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-right",
+          "text": "B山东省",
+          "x": 200,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-dim",
+          "text": "C安徽省",
+          "x": 24,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-dim",
+          "text": "D四川省",
+          "x": 200,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        }
+      ],
+      "question": "山东省",
+      "score": "1",
+      "lives": "剩余3次机会"
+    },
+    {
+      "id": "q2",
+      "file": "captures/q2.png",
+      "sha256": "ad1e3f623628134c0d4543af58f2d0d5db0173d01c0533d8366199022f0b6611",
+      "clock": 1794283202900,
+      "boxes": [
+        {
+          "cls": "game-topline",
+          "text": "已认出1个地区",
+          "x": 24,
+          "y": 70,
+          "w": 342,
+          "h": 58
+        },
+        {
+          "cls": "map-card question-map",
+          "text": "审图号：GS(2026)4921号",
+          "x": 24,
+          "y": 242,
+          "w": 342,
+          "h": 332
+        },
+        {
+          "cls": "feedback-line",
+          "text": "不用着急，选一个你觉得对的。",
+          "x": 24,
+          "y": 599.40625,
+          "w": 342,
+          "h": 41
+        },
+        {
+          "cls": "answer-button",
+          "text": "A青海省",
+          "x": 24,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "B江西省",
+          "x": 200,
+          "y": 644.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "C山东省",
+          "x": 24,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button",
+          "text": "D吉林省",
+          "x": 200,
+          "y": 716.40625,
+          "w": 166,
+          "h": 62
+        }
+      ],
+      "question": "江西省",
+      "choices": [
+        "青海省",
+        "江西省",
+        "山东省",
+        "吉林省"
+      ],
+      "score": "1",
+      "lives": "剩余3次机会"
+    },
+    {
+      "id": "q2-wrong",
+      "file": "captures/q2-wrong.png",
+      "sha256": "6d9f36b0bbc9bd275d33e8a86db83966d6abe9c7db15b3e64340238415546764",
+      "clock": 1794283203050,
+      "boxes": [
+        {
+          "cls": "game-topline",
+          "text": "已认出1个地区",
+          "x": 24,
+          "y": 70,
+          "w": 342,
+          "h": 58
+        },
+        {
+          "cls": "map-card question-map",
+          "text": "审图号：GS(2026)4921号江西省",
+          "x": 24,
+          "y": 231.796875,
+          "w": 342,
+          "h": 332
+        },
+        {
+          "cls": "feedback-line feedback-line--wrong",
+          "text": "这是江西省，下次就认识啦。3 秒后自动继续",
+          "x": 24,
+          "y": 579,
+          "w": 342,
+          "h": 41
+        },
+        {
+          "cls": "answer-button is-wrong",
+          "text": "A青海省",
+          "x": 24,
+          "y": 624,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-right",
+          "text": "B江西省",
+          "x": 200,
+          "y": 624,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-dim",
+          "text": "C山东省",
+          "x": 24,
+          "y": 696,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "answer-button is-dim",
+          "text": "D吉林省",
+          "x": 200,
+          "y": 696,
+          "w": 166,
+          "h": 62
+        },
+        {
+          "cls": "primary-button next-button",
+          "text": "下一题",
+          "x": 24,
+          "y": 774,
+          "w": 342,
+          "h": 50
+        }
+      ],
+      "question": "江西省",
+      "picked": "青海省",
+      "score": "1",
+      "lives": "剩余2次机会"
+    },
+    {
+      "id": "result",
+      "file": "captures/result.png",
+      "sha256": "e6b67bc73b4e22d9a06e62d900dd0e6ea690d62a161753754649b175baf366ed",
+      "clock": 1794283217950,
+      "boxes": [
+        {
+          "cls": "score-ring",
+          "text": "7个地区",
+          "x": 83,
+          "y": 272.40625,
+          "w": 224,
+          "h": 224
+        },
+        {
+          "cls": "primary-button",
+          "text": "再猜一次",
+          "x": 28,
+          "y": 704.796875,
+          "w": 334,
+          "h": 56
+        }
+      ]
+    }
+  ],
+  "clicks": [
+    {
+      "label": "更换",
+      "cx": 195,
+      "cy": 688.6015625,
+      "clock": 1794283201000
+    },
+    {
+      "label": "全部地区",
+      "cx": 195,
+      "cy": 291.96875,
+      "clock": 1794283201400
+    },
+    {
+      "label": "开始猜",
+      "cx": 195,
+      "cy": 790.046875,
+      "clock": 1794283201800
+    },
+    {
+      "label": "答对 山东省",
+      "cx": 283,
+      "cy": 675.40625,
+      "clock": 1794283202200
+    },
+    {
+      "label": "答错 江西省（选了 青海省）",
+      "clock": 1794283202900
+    }
+  ],
+  "mapCutout": {
+    "file": "captures/q1-map.png",
+    "sha256": "21d4c7d1d1f098c13c7395be630586b4b30c2395e9645e8acfcab815591e7dc2"
+  }
+}
