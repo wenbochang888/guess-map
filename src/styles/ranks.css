@@ -13,5 +13,9 @@
 .my-rank{display:flex;align-items:center;background:var(--ink);color:var(--surface);padding:18px 16px;border-radius:var(--r-md);margin:18px 0 8px;font-size:var(--t-sm);box-shadow:var(--shadow-1)}
 .my-rank strong{font-size:var(--t-xl);margin-left:auto;font-weight:700;font-family:var(--num)}
 .my-rank small{font-size:var(--t-xs);margin-left:10px;color:#cfd9cf}
+.rank-pager{display:flex;align-items:center;justify-content:space-between;margin-top:12px;border-top:1px solid var(--line)}
+.rank-pager .text-button{padding:8px 4px;color:var(--ink);font-weight:600}
+.rank-pager .text-button:disabled{color:var(--muted)}
+.rank-pager-status{font-size:var(--t-sm);color:var(--muted);font-family:var(--num);font-variant-numeric:tabular-nums}
 .rank-footnote{text-align:center;font-size:var(--t-xs);line-height:1.9;color:var(--muted);margin:24px 0}
 @media(min-width:600px){.rank-layout>h1{font-size:var(--t-4xl)}}

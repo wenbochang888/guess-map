@@ -7,22 +7,11 @@
     "geometryChanged": false
   },
   "countries": {
-    "name": "中国",
+    "name": "意大利",
     "status": "ready",
-    "imageFile": "china-standard-map.jpg",
-    "source": "2023年版标准地图；兵团第十三师新星市政府网站转载的完整原图",
-    "sourceUrl": "https://www.btdsss.gov.cn/c/2023-08-29/866123.shtml",
-    "downloadUrl": "https://www.btdsss.gov.cn/upload/resources/image/2023/08/29/513727.jpg",
-    "usageEvidenceUrl": "https://ghzyj.sh.gov.cn/hyxw/20230222/c97d40c87fc84a0f8cd414a6bf2b8fb9.html",
-    "usageEvidence": "自然资源部门户网站提供的标准地图可直接使用并标注审图号；转载页面明确为2023年版标准地图发布说明，提供免费浏览下载与直接使用标注说明。",
-    "approvalNumber": "GS(2023)2766号",
-    "approvalNumberEvidence": "保留原图下边沿印刷审图号，并在页面另设可读标注；不继承原游戏题库审图号。",
-    "sha256": "d28e8f31f38e47ee0b1b1573cbe6be14a527aad661215d5429c24bcad22c69d1",
-    "bytes": 177339,
-    "width": 1279,
-    "height": 904,
-    "modification": "none",
-    "presentation": "原始JPEG逐字节随包保存，完整等比展示，不裁剪、不描摹、不删除台湾或南海诸岛附图，不编辑地图内容。",
-    "scope": "仅用于国家玩法首页示例，不新增正式国家题目或更改成绩规则。"
+    "source": "现有 Natural Earth 5.1.2 国家轮廓，复用题库 countries 中 ID country-ita 的 path",
+    "sourceRecord": "data-licenses.json",
+    "geometryChanged": false,
+    "note": "2026-11-11 起不再使用中国标准地图原图作为国家首页示例，改为与题目一致的轮廓样式。"
   }
 }

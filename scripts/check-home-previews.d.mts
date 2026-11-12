@@ -1,1 +1,1 @@
-export function previewSourceErrors(metadata: unknown): string[];
+export function previewSourceErrors(metadata: unknown, bank?: unknown): string[];

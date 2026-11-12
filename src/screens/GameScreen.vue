@@ -15,7 +15,6 @@ const lives = computed(() => config.maxMistakes - props.session.mistakes);
 const answered = computed(() => props.session.phase !== 'question');
 const right = computed(() => answered.value && !!props.session.correct);
 const wrong = computed(() => answered.value && !props.session.correct);
-const progress = computed(() => ({ transform: `scaleX(${(props.session.index + (answered.value ? 1 : 0)) / Math.max(1, props.session.deck.length)})` }));
 </script>
 <template>
   <main class="game-layout">
@@ -23,7 +22,6 @@ const progress = computed(() => ({ transform: `scaleX(${(props.session.index + (
       <div class="score"><span>已认出</span><span class="score-num"><strong :key="session.score">{{ session.score }}</strong><span v-if="right" :key="session.score" class="plus-one" aria-hidden="true">+1</span></span><span>{{ unit }}</span><span v-if="streak >= 3" class="streak-badge" role="img" :aria-label="`连对${streak}题`"><Icon name="flame" :size="13" /><span class="streak-text">连对 </span>×{{ streak }}</span></div>
       <div class="lives" role="img" :aria-label="`剩余${lives}次机会`"><Icon v-for="n in config.maxMistakes" :key="n" name="heart" :size="22" :class="{ spent: n > lives, 'just-spent': wrong && n === lives + 1 }" /></div>
     </div>
-    <div class="progress" role="progressbar" aria-label="答题进度" aria-valuemin="1" :aria-valuenow="session.index + 1" :aria-valuemax="session.deck.length"><i :style="progress"></i></div>
     <section class="question-area">
       <div class="question-heading"><span class="eyebrow question-context">{{ contextLine }}</span><h1 tabindex="-1" class="display">这是哪个{{ noun }}？</h1></div>
       <MapCard :key="current.id" class="question-map" :flash="right">

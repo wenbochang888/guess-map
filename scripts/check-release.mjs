@@ -3,7 +3,7 @@ export function releaseErrors(bank, report, licenses, approvalNumber) {
  const errors=[];
  if (licenses?.mapApprovalScope?.countries !== bank.countries.length || licenses?.mapApprovalScope?.chinaMainlandRegions !== bank.cities.length || licenses?.mapApprovalScope?.includesLocationInsets !== true) errors.push('地图审图范围未覆盖全部题目与位置小图。');
  if (licenses?.mapReviewStatus !== '已取得审图号' || !approvalNumber || licenses?.mapApprovalNumber !== approvalNumber) errors.push('地图审核状态或审图号缺失、不一致。');
- if (!licenses?.mapApprovalScope?.questionBankSha256 || licenses?.questionBank?.sha256 !== licenses?.mapApprovalScope?.questionBankSha256 || licenses?.questionBank?.countries !== 60 || licenses?.questionBank?.cities !== 418) errors.push('地图批准范围与题库不一致。');
+ if (!licenses?.mapApprovalScope?.questionBankSha256 || licenses?.questionBank?.sha256 !== licenses?.mapApprovalScope?.questionBankSha256 || licenses?.questionBank?.countries !== bank.countries.length || licenses?.questionBank?.cities !== 418) errors.push('地图批准范围与题库不一致。');
  if (new Set(bank.cities.map(q=>q.id)).size!==bank.cities.length || bank.cities.some(q=>!bank.regions.some(r=>r.id===q.regionId))) errors.push('中国目标ID重复或父地区缺失。');
  if (!bank.coverage?.complete || !report.complete) errors.push('全国地区题库未完成核验；不能将精选题预览打包为全国正式版。');
  if (bank.version !== report.version) errors.push('覆盖报告与题库版本不一致。');

@@ -1,17 +1,20 @@
 import { readFile } from 'node:fs/promises';
-import { createHash } from 'node:crypto';
 import path from 'node:path';
 
-export function previewSourceErrors(metadata) {
+// 两个首页示例都复用题库现有轮廓，不引入新的地图图片或几何。
+export function previewSourceErrors(metadata, bank) {
   const errors = [];
-  if (metadata?.chinaMainland?.status !== 'ready') errors.push('广东省首页示例未就绪。');
-  const country = metadata?.countries;
-  if (country?.status !== 'ready') errors.push('中国全国首页示例未就绪，禁止将占位状态打包为最终版。');
-  if (!country || !/^GS\(\d{4}\)\d+号$/.test(country.approvalNumber || '')) errors.push('中国全国示例缺少独立的原图审图号。');
-  if (!country || !/^[\w-]+\.(png|jpe?g)$/.test(country.imageFile || '')) errors.push('中国全国示例缺少包内图片路径。');
-  if (!country || !/^[a-f0-9]{64}$/.test(country.sha256 || '')) errors.push('中国全国示例缺少图片指纹。');
-  if (!country || !/^https:\/\//.test(country.sourceUrl || '') || !/^https:\/\//.test(country.usageEvidenceUrl || '')) errors.push('中国全国示例缺少来源及直接使用依据。');
-  if (country?.modification !== 'none') errors.push('标准地图必须完整使用原图，不裁剪、不描摹、不改动地图内容。');
+  const china = metadata?.chinaMainland, country = metadata?.countries;
+  if (china?.status !== 'ready') errors.push('广东省首页示例未就绪。');
+  if (country?.status !== 'ready') errors.push('国家首页示例未就绪，禁止将占位状态打包为最终版。');
+  for (const [label, item] of [['广东省', china], ['国家', country]]) {
+    if (item && item.geometryChanged !== false) errors.push(`${label}首页示例必须复用题库轮廓，不得改动几何。`);
+    if (item && 'imageFile' in item) errors.push(`${label}首页示例不再使用外部地图图片。`);
+  }
+  if (bank) {
+    if (!bank.regions?.some(region => region.id === '440000' && region.path)) errors.push('题库缺少广东省轮廓。');
+    if (!bank.countries?.some(question => question.id === 'country-ita' && question.path)) errors.push('题库缺少意大利轮廓。');
+  }
   return errors;
 }
 
@@ -19,17 +22,10 @@ if (process.argv[1]?.endsWith('check-home-previews.mjs')) {
   const root = path.resolve(process.argv[2] || 'public');
   try {
     const metadata = JSON.parse(await readFile(path.join(root, 'assets/home-preview-sources.json'), 'utf8'));
-    const errors = previewSourceErrors(metadata);
-    if (!errors.length) {
-      const country = metadata.countries;
-      const image = await readFile(path.join(root, country.imageFile));
-      if (createHash('sha256').update(image).digest('hex') !== country.sha256) errors.push('中国全国示例图片指纹不符。');
-      const png = image.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
-      const jpeg = image[0] === 255 && image[1] === 216 && image[2] === 255;
-      if (!png && !jpeg) errors.push('中国全国示例不是有效的PNG/JPEG文件。');
-    }
+    const bank = JSON.parse(await readFile(path.resolve('src/data/questions.json'), 'utf8'));
+    const errors = previewSourceErrors(metadata, bank);
     if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
-    else console.log('首页示例发布检查通过：广东省轮廓与中国全国原图均已就绪。');
+    else console.log('首页示例发布检查通过：广东省与意大利轮廓均复用题库。');
   } catch (error) {
     console.error('首页示例发布检查失败：' + error.message); process.exitCode = 1;
   }

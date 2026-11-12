@@ -7,6 +7,10 @@
 #   preview   渲染 540×960 预览片（带声音）
 #   final     渲染 1080×1920 正式片并自动验收
 #   all       setup + capture + stills + preview
+#   shapes-audio            生成「各省像什么」音效（原创合成；配乐用 public/audio/shapes/musi.mp3）
+#   shapes-covers [版本号]   渲染「各省像什么」3 张封面（3:4 / 4:3 / 16:9）→ promo-3d/output/shapes/covers/<版本号>/
+#   shapes-final [版本号]    渲染「各省像什么」完整版（约 40 秒）+ 10 张带遮挡区的检查静帧 → promo-3d/output/shapes/<版本号>/
+#   shapes-sample [版本号]   渲染「各省像什么」约 13 秒样片 + 3 张带遮挡参考线的静帧 → promo-3d/output/shapes/<版本号>/
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
@@ -60,8 +64,35 @@ case "$STEP" in
     find_browser
     node promo-3d/scripts/render-film.mjs --version="$VER"
     node promo-3d/scripts/verify-film.mjs "promo-3d/output/$VER/caiditu-3d-30s.mp4" ;;
+  shapes-audio)
+    node promo-3d/scripts/make-sfx-shapes.mjs ;;
+  shapes-sample)
+    find_browser
+    [ -d promo-3d/node_modules/@fontsource/noto-serif-sc ] || npm install --prefix promo-3d   # 首次：装思源宋体
+    "$0" shapes-audio   # 配乐/音效脚本很快，每次重新生成，保证和时间轴一致
+    VER="${2:-s1}"
+    node promo-3d/scripts/render-shapes.mjs --comp=ShapesSample --version="$VER"
+    node promo-3d/scripts/render-stills.mjs ShapesSampleGuides "promo-3d/output/shapes/$VER/stills" 0,105,222,355 --scale=0.5
+    echo "样片 → promo-3d/output/shapes/$VER/ShapesSample.mp4" ;;
+  shapes-covers)
+    find_browser
+    [ -d promo-3d/node_modules/@fontsource/noto-serif-sc ] || npm install --prefix promo-3d
+    VER="${2:-c1}"
+    for C in ShapesCover34 ShapesCover43 ShapesCover169; do
+      node promo-3d/scripts/render-stills.mjs "$C" "promo-3d/output/shapes/covers/$VER" 0
+    done
+    echo "封面 → promo-3d/output/shapes/covers/$VER/" ;;
+  shapes-final)
+    find_browser
+    [ -d promo-3d/node_modules/@fontsource/noto-serif-sc ] || npm install --prefix promo-3d
+    "$0" shapes-audio
+    VER="${2:-f1}"
+    node promo-3d/scripts/render-shapes.mjs --comp=Shapes --version="$VER"
+    # 带遮挡区的检查静帧：钩子、天鹅、湘赣、西藏、山西暗剪影、山西亮灯、新疆、甘肃三选一、静音段、片尾墙
+    node promo-3d/scripts/render-stills.mjs ShapesGuides "promo-3d/output/shapes/$VER/stills" 0,100,425,480,598,615,870,980,1035,1205 --scale=0.5
+    echo "完整版 → promo-3d/output/shapes/$VER/Shapes.mp4" ;;
   all)
     "$0" setup && "$0" capture && "$0" stills && "$0" preview "$VER" ;;
   *)
-    sed -n '2,10p' "$0" ;;
+    sed -n '2,12p' "$0" ;;
 esac

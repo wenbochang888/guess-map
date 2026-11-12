@@ -10,7 +10,7 @@
 - 39 条源文件中的“不统计”行逐项排除：4个直辖市父级占位、35个省直辖县级单位。没有将它们冒充地级市。
 - 地级市中不设区的东莞、中山、儋州等正常入题。各题与干扰项使用稳定代码ID，同地区内四选一，按ID判分。
 
-## 1. 国家：Natural Earth（保持原60国不变）
+## 1. 国家：Natural Earth（原60国不变，2026-11-11 新增58国，见第7节）
 
 - Natural Earth 5.1.2，1:50m `admin_0_countries`。
 - 原数据：<https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson>
@@ -88,7 +88,7 @@ npm run data:check
 **地图审图号：GS(2026)4921号，按用户确认覆盖当前全部最终成图；本地未留存批准文件。** 截至今日官方行政目录逐单位独立认证、小红书模拟器/Android/iOS验收及目标用户难度实验尚未完成。 CC许可与来源方研究声明不能代替上述审核；浏览器帧率/耗时也不冒充手机性能。
 
 
-## 6. 首页展示示例（2026-11-09 最终修正）
+## 6. 首页展示示例（2026-11-09 版本，已于 2026-11-11 被第7节取代）
 
 - 中国大陆玩法首页使用广东省（目录 ID `440000`）的现有省级轮廓。仅引用原始 `path`，不重新投影、不修改几何；游戏默认仍为大陆31个省级地区。
 - 国家首页改用政府网站公开转载的2023年版中国标准地图原图，来源页面：<https://www.btdsss.gov.cn/c/2023-08-29/866123.shtml>；原始JPEG：<https://www.btdsss.gov.cn/upload/resources/image/2023/08/29/513727.jpg>。页面介绍2023年版标准地图发布、免费浏览下载及直接使用时标注审图号的要求。
@@ -98,3 +98,14 @@ npm run data:check
 - 此图仅用于首页展示，不作为游戏题目，不改变正式60国题库、候选答案、46题默认玩法及成绩规则。新增示例采用其自身原图标注，**不冒用原游戏题库的GS(2026)4921号**。
 - 展示配置见 `src/data/home-previews.ts`，随包记录见 `public/assets/home-preview-sources.json`。此前占位已移除；`scripts/check-home-previews.mjs` 会阻止未就绪、缺来源、缺原图或指纹不匹配的最终打包。
 - 正式题库SHA-256仍为 `57e28d04923158e760e50a38b4e27ba5f1ab4f2fd2a019c67696e252f3b9431d`；原题库批准记录没有被改写。
+
+
+## 7. 国家扩充与首页示例调整（2026-11-11）
+
+- 生成入口：`python3 -I scripts/expand-countries.py --natural-earth <ne_50m_admin_0_countries.geojson>`，输入为第1节同一固定文件（SHA-256 `3e458fc0…7fdeb`），先校验指纹。`--check` 校验 `questions.json`、`country-snapshot.json`、`country-curation.json`、`coverage-report.json`、`data-licenses.json` 五个文件可逐字节复现；`--contact-sheet out.html` 输出新增轮廓联系表用于人工检查。
+- 复用 `prepare-maps.py` 的投影、拟合与简化函数，参数与原60国一致。原60国条目、全部中国城市/区县/省级数据逐字节不变（有测试断言）。
+- 新增58国，题库合计118国。范围裁剪逐多边形写入快照：荷兰仅欧洲本土；厄瓜多尔不含加拉帕戈斯群岛；新西兰仅本土主要岛屿（去掉查塔姆、亚南极群岛及托克劳）；俄罗斯去掉克里米亚半岛多边形。前三者在题面标注范围。
+- 排除并记录原因：印度、巴基斯坦（藏南/克什米尔争议画法）、塞尔维亚（科索沃单列）、索马里（索马里兰单列）、以色列、斐济（1:50m 下仅剩散点）、中国及港澳台、属地和微型岛国。
+- 新增国家干扰项为确定性自动草稿（`status: auto-draft`）：medium＝同大洲质心最近4个＋其他大洲随机4个；hard＝全局最近8个；easy＝其他大洲随机8个。游戏使用 medium。需要试玩后人工调整。
+- 首页国家示例改为题库中意大利（`country-ita`）轮廓，删除 `public/china-standard-map.jpg` 及其校验；`scripts/check-home-previews.mjs` 现在要求两个示例都复用题库轮廓、不引入外部地图图片。
+- 审图号：按用户指示沿用 GS(2026)4921号，`data-licenses.json` 的批准范围数量和题库指纹已同步为新题库（SHA-256 `ebd299a1…0ef8`），并注明新增轮廓的审图范围由用户另行处理。

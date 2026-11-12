@@ -1,11 +1,11 @@
 {
-  "version": "2026-11-08.1",
+  "version": "2026-11-11.1",
   "complete": true,
   "scope": "mainland-31-prefectures-and-municipality-counties",
   "status": "source-snapshot-complete",
   "note": "大陆31地区，333个地级行政区＋85个直辖市区县；按CTAmap 2026年初快照，不含普通省份的省直辖县级单位。数据覆盖校验不替代地图审核。",
   "curation": "draft-needs-playtest",
-  "countries": 60,
+  "countries": 118,
   "cities": 418,
   "prefectures": 333,
   "municipalityCounties": 85,

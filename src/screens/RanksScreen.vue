@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref, watch } from 'vue';
 import Icon from '../components/Icon.vue';
 import RankTable from '../components/RankTable.vue';
 import SegmentedControl from '../components/SegmentedControl.vue';
@@ -10,8 +10,15 @@ const props = defineProps<{
   myRank: MyRank | null; myRankText: string; caption: string; coverageNote: boolean;
 }>();
 const emit = defineEmits<{ (e: 'board', value: BoardKey): void; (e: 'period', value: Period): void; (e: 'retry'): void; (e: 'back'): void; (e: 'play'): void }>();
-const boards = [{ value: 'china-provinces', label: '省级地区榜' }, { value: 'country-medium', label: '国家榜' }];
+const boards = [{ value: 'china-provinces', label: '中国大陆榜' }, { value: 'country-medium', label: '国家榜' }];
 const periods = [['day', '今日'], ['week', '本周'], ['all', '总榜']] as const;
+// 平台最多返回前100名且不支持翻页参数，分页只在前端切片。
+const PAGE_SIZE = 10;
+const page = ref(1);
+const pages = computed(() => Math.max(1, Math.ceil(props.entries.length / PAGE_SIZE)));
+const pageEntries = computed(() => props.entries.slice((page.value - 1) * PAGE_SIZE, page.value * PAGE_SIZE));
+watch(() => [props.board, props.period, props.entries], () => { page.value = 1; });
+function goPage(next: number) { page.value = Math.min(pages.value, Math.max(1, next)); }
 const indicator = computed(() => ({ transform: `translateX(${Math.max(0, periods.findIndex(item => item[0] === props.period)) * 100}%)` }));
 </script>
 <template>
@@ -26,7 +33,14 @@ const indicator = computed(() => ({ transform: `translateX(${Math.max(0, periods
     <template v-else>
       <div class="my-rank"><span>我的本期排名</span><strong>{{ myRankText }}</strong><small v-if="myRank?.status === 'EXACT'">{{ myRank.score }} 分</small></div>
       <div v-if="!entries.length" class="rank-state"><Icon name="globe" :size="34" /><p>这一期，还没有人留下成绩。</p><button class="text-button" @click="emit('play')">去认几个地方<Icon name="arrow" :size="16" /></button></div>
-      <RankTable v-else :entries="entries" />
+      <template v-else>
+        <RankTable :key="page" :entries="pageEntries" />
+        <nav v-if="pages > 1" class="rank-pager" aria-label="榜单分页">
+          <button class="text-button" :disabled="page <= 1" aria-label="上一页" @click="goPage(page - 1)">上一页</button>
+          <span class="rank-pager-status" aria-live="polite">第 {{ page }} / {{ pages }} 页</span>
+          <button class="text-button" :disabled="page >= pages" aria-label="下一页" @click="goPage(page + 1)">下一页</button>
+        </nav>
+      </template>
       <p class="rank-footnote">每期保留最好成绩 · 同分先提交者在前<br>今日与本周按北京时间更新</p>
     </template>
   </main>

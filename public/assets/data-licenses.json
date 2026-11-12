@@ -1,13 +1,13 @@
 {
-  "version": "2026-11-08.1",
+  "version": "2026-11-11.1",
   "mapReviewStatus": "已取得审图号",
   "administrativeCurrency": "CTAmap 2026年初快照；不保证截至今日行政现势",
   "performanceStatus": "静态与桌面浏览器检查；移动WebView性能未实测",
   "questionBank": {
-    "countries": 60,
+    "countries": 118,
     "cities": 418,
-    "bytes": 2573912,
-    "sha256": "57e28d04923158e760e50a38b4e27ba5f1ab4f2fd2a019c67696e252f3b9431d"
+    "bytes": 2706293,
+    "sha256": "ebd299a148b77632ac490c231b6fe54b3c0dcce49b0b8ed9dd49c14cf5a50ef8"
   },
   "sources": [
     {
@@ -20,7 +20,7 @@
       "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
       "licenseEvidenceSha256": "35235c1304e4bdfd084ae89e0143bfeff9c98414f7ee183eb2ae982b93b3246d",
       "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
-      "usedFor": "60 个主权国家轮廓；不使用中国、香港、澳门、台湾几何；不将属地列作国家"
+      "usedFor": "118 个主权国家轮廓；不使用中国、香港、澳门、台湾几何；不将属地列作国家；排除边界画法与我国立场不符的国家"
     },
     {
       "id": "ctamap",
@@ -6206,10 +6206,10 @@
   "curationStatus": "draft-needs-playtest",
   "mapApprovalNumber": "GS(2026)4921号",
   "mapApprovalScope": {
-    "countries": 60,
+    "countries": 118,
     "chinaMainlandRegions": 418,
     "includesLocationInsets": true,
-    "questionBankSha256": "57e28d04923158e760e50a38b4e27ba5f1ab4f2fd2a019c67696e252f3b9431d",
-    "confirmation": "用户于2026-11-08确认正式批准文件覆盖当前全部最终成图；本地未留存批准文件。"
+    "questionBankSha256": "ebd299a148b77632ac490c231b6fe54b3c0dcce49b0b8ed9dd49c14cf5a50ef8",
+    "confirmation": "用户于2026-11-08确认正式批准文件覆盖当时全部最终成图（60国）；2026-11-11按用户指示扩展至118国并沿用该审图号，新增轮廓的审图范围由用户另行处理；本地未留存批准文件。"
   }
 }

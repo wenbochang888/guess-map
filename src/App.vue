@@ -12,7 +12,7 @@ import ResultScreen from './screens/ResultScreen.vue';
 import { config } from './config';
 import bankData from './data/questions.json';
 import { advance, answer, newSession, type Session } from './game/session';
-import { poolFor, questionForId, type QuestionBank } from './game/questions';
+import { countryScopeNotes, questionForId, type QuestionBank } from './game/questions';
 import { bestKey, boardFor, defaultOptions, boardNames, type GameOptions, type BoardKey } from './game/options';
 import { createLeaderboard } from './platform/leaderboard';
 import { createFollowService } from './platform/follow';
@@ -36,13 +36,13 @@ const modalTrigger = ref<HTMLElement | null>(null);
 const leaderboard = createLeaderboard(config.leaderboardEnabled);
 const availability = ref(leaderboard.availability);
 const rankBoard = ref<BoardKey>('china-provinces');
-const period = ref<Period>('day');
+const period = ref<Period>('all');
 const rankEntries = ref<RankEntry[]>([]);
 const myRank = ref<MyRank | null>(null), resultRank = ref<MyRank | null>(null);
 const rankLoading = ref(false), rankError = ref('');
 const homeRankEntries = ref<RankEntry[]>([]);
 const homeRankLoading = ref(true), homeRankError = ref('');
-const homeBoard = computed(() => boardFor(defaultOptions(mode.value))!);
+const homeBoard = computed(() => boardFor(defaultOptions(mode.value)));
 const homeTopTen = computed(() => homeRankEntries.value.slice(0, 10));
 const submitState = ref<'idle' | 'pending' | 'success' | 'error'>('idle');
 const rankOrigin = ref<'home' | 'result'>('home');
@@ -57,11 +57,9 @@ let mounted = true;
 const activeOptions = computed(() => screen.value === 'home' ? options.value : session.value?.options || options.value);
 const current = computed(() => session.value?.deck[session.value.index]);
 const currentRegion = computed(() => bank.regions.find(r => r.id === current.value?.regionId));
-const homePool = computed(() => poolFor(bank, options.value));
 const preview = computed(() => homePreviewFor(bank, mode.value));
-const counts = computed(() => { const result: Record<string, number> = {}; for (const q of bank.cities) if (q.regionId) result[q.regionId] = (result[q.regionId] || 0) + 1; return result; });
 const selectedBest = computed(() => bests[bestKey(screen.value === 'home' ? options.value : session.value?.options || options.value)] || 0);
-const localOnly = computed(() => boardFor(activeOptions.value) === null);
+const regionalStart = computed(() => activeOptions.value.mode === 'cities' && activeOptions.value.regionId !== 'all');
 const noun = computed(() => activeOptions.value.mode === 'countries' ? '国家' : current.value?.adminType === 'province-level' ? '省级行政区' : current.value?.adminType === 'district' || current.value?.adminType === 'county' ? '区县' : current.value?.adminType === 'prefecture' ? '地级行政区' : '城市');
 const unit = computed(() => activeOptions.value.mode === 'countries' ? '个国家' : '个地区');
 const willFinish = computed(() => !!session.value && (session.value.mistakes >= config.maxMistakes || session.value.index + 1 >= session.value.deck.length));
@@ -69,31 +67,37 @@ const completedAll = computed(() => !!session.value && session.value.mistakes < 
 const newBest = computed(() => (session.value?.score || 0) > previousBest.value);
 const selectedRegion = computed(() => bank.regions.find(r => r.id === regionId.value));
 const regionName = computed(() => selectedRegion.value?.name || '全部地区');
-const regionMeta = computed(() => `${homePool.value.length} 道轮廓 · ${regionId.value === 'all' ? '猜省级行政区' : selectedRegion.value?.kind === 'municipality' ? '猜区县' : '猜地级行政区'}`);
-const localHome = computed(() => mode.value === 'cities' && regionId.value !== 'all');
 const contextLine = computed(() => {
   const game = session.value, q = current.value;
   if (!game || !q) return '';
-  if (game.options.mode === 'countries') return q.id === 'country-fra' ? `${q.region} · 国家 · 欧洲本土及科西嘉岛` : `${q.region} · 国家`;
-  if (game.options.regionId === 'all') return '中国大陆 · 省级地区';
+  if (game.options.mode === 'countries') return countryScopeNotes[q.id] ? `${q.region} · 国家 · ${countryScopeNotes[q.id]}` : `${q.region} · 国家`;
+  if (q.adminType === 'province-level') return '中国大陆 · 省级地区';
   return `${currentRegion.value?.name || q.region} · ${currentRegion.value?.kind === 'municipality' ? '区县' : '地级行政区'}`;
 });
 const insetLabel = computed(() => currentRegion.value?.kind === 'municipality' ? '市内位置' : currentRegion.value?.kind === 'autonomous' ? '自治区内位置' : '省内位置');
+// 题量很大，称号按绝对分数分档；得分环填充到当前档位的上限。
+const titleTiers = computed(() => session.value?.mode === 'countries' ? [10, 30, 60] : [10, 31, 100]);
 const rankTitle = computed(() => {
   const game = session.value;
   if (!game) return '';
-  const ratio = game.score / Math.max(1, game.deck.length);
-  return completedAll.value ? '活地图' : ratio >= 0.75 ? '认路达人' : ratio >= 0.4 ? '渐入佳境' : '初见轮廓';
+  const [low, mid, high] = titleTiers.value;
+  return completedAll.value || game.score >= high ? '活地图' : game.score >= mid ? '认路达人' : game.score >= low ? '渐入佳境' : '初见轮廓';
+});
+const ringTotal = computed(() => {
+  const game = session.value;
+  if (!game) return 1;
+  if (completedAll.value) return game.deck.length;
+  return titleTiers.value.find(tier => game.score < tier) || Math.max(1, game.score);
 });
 const missedNames = computed(() => missed.value.map(id => questionForId(bank, id)?.name || '').filter(Boolean));
-const rankCaption = computed(() => `${boardNames[rankBoard.value]} · ${rankBoard.value === 'china-provinces' ? '31 个省级地区，最高 31 分' : '每局最多 ' + poolFor(bank, defaultOptions('countries')).length + ' 个国家'}`);
+const rankCaption = computed(() => `${boardNames[rankBoard.value]} · 答对一题一分，猜错 3 次结束`);
 function choiceName(id: string): string {
   const question = questionForId(bank, id);
   if (!question) return '未知选项';
   const sameName = session.value?.deck[session.value.index]?.choices.filter(other => questionForId(bank, other)?.name === question.name) || [];
   return sameName.length > 1 ? `${question.name}（${question.region}）` : question.name;
 }
-function label(value: GameOptions) { return value.mode === 'countries' ? '国家' : value.regionId === 'all' ? '中国大陆 · 省级地区' : `${bank.regions.find(r => r.id === value.regionId)?.name || '所选地区'} · 本地区`; }
+function label(value: GameOptions) { return value.mode === 'countries' ? '国家' : value.regionId === 'all' ? '中国大陆' : `中国大陆 · ${bank.regions.find(r => r.id === value.regionId)?.name || '所选地区'}起步`; }
 const myRankText = computed(() => !myRank.value ? '' : myRank.value.status === 'EXACT' ? `第 ${myRank.value.rank} 名` : myRank.value.status === 'OVER_LIMIT' ? '500+' : myRank.value.status === 'NO_SCORE' ? '本期暂无成绩' : '完成一局后上榜');
 function notify(message: string) { toast.value = message; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toast.value = ''; }, 3000); }
 async function focusHeading() { await nextTick(); window.scrollTo(0, 0); document.querySelector<HTMLElement>('main h1')?.focus({ preventScroll: true }); }
@@ -154,7 +158,7 @@ async function submit(game: Session) {
     await leaderboard.submit(board, game.score, game.id);
     if (mounted && screen.value === 'home' && homeBoard.value === board) void loadHomeRanks();
     if (stillResult(game.id)) submitState.value = 'success';
-    if (stillResult(game.id)) { try { const data = await leaderboard.load(board, 'day'); if (stillResult(game.id)) resultRank.value = data.mine; } catch { /* query failure is not an empty rank */ } }
+    if (stillResult(game.id)) { try { const data = await leaderboard.load(board, 'all'); if (stillResult(game.id)) resultRank.value = data.mine; } catch { /* query failure is not an empty rank */ } }
   } catch { if (stillResult(game.id)) submitState.value = 'error'; }
   if (mounted) availability.value = leaderboard.availability;
 }
@@ -190,7 +194,7 @@ async function loadHomeRanks(force = false) {
   const board = homeBoard.value;
   homeRankLoading.value = true; homeRankError.value = ''; homeRankEntries.value = [];
   try {
-    const data = await leaderboard.load(board, 'day', force);
+    const data = await leaderboard.load(board, 'all', force);
     if (!mounted || screen.value !== 'home' || request !== homeRankRequest || board !== homeBoard.value) return;
     homeRankEntries.value = data.entries;
   } catch {
@@ -205,7 +209,7 @@ async function loadHomeRanks(force = false) {
 async function probeRanks() { await leaderboard.probe(); if (mounted) availability.value = leaderboard.availability; }
 async function openRanks() {
   homeRankRequest++; invalidateFollow(); rankOrigin.value = screen.value === 'result' ? 'result' : 'home';
-  rankBoard.value = boardFor(activeOptions.value) || 'china-provinces'; screen.value = 'ranks'; period.value = 'day'; void focusHeading(); await loadRanks();
+  rankBoard.value = boardFor(activeOptions.value); screen.value = 'ranks'; period.value = 'all'; void focusHeading(); await loadRanks();
 }
 async function loadRanks(force = false) {
   const request = ++rankRequest; rankLoading.value = true; rankError.value = ''; rankEntries.value = []; myRank.value = null;
@@ -213,7 +217,7 @@ async function loadRanks(force = false) {
   catch { if (request === rankRequest && mounted) rankError.value = leaderboard.availability === 'unavailable' ? '排行榜暂未开放，先轻松猜一局吧。' : '榜单暂时没连上，请稍后重试。'; }
   finally { if (request === rankRequest && mounted) { rankLoading.value = false; availability.value = leaderboard.availability; } }
 }
-function changeBoard(value: BoardKey) { rankBoard.value = value; period.value = 'day'; void loadRanks(); }
+function changeBoard(value: BoardKey) { rankBoard.value = value; period.value = 'all'; void loadRanks(); }
 function changePeriod(value: Period) { period.value = value; void loadRanks(); }
 function backFromRanks() { rankRequest++; screen.value = rankOrigin.value === 'result' && session.value ? 'result' : 'home'; void focusHeading(); if (screen.value === 'home') void loadHomeRanks(); }
 async function share() { if (shareBusy.value) return; shareBusy.value = true; try { await shareCard(); } catch { notify('暂时无法发起分享，可以继续猜地图。'); } finally { shareBusy.value = false; } }
@@ -237,33 +241,33 @@ onUnmounted(() => { mounted = false; rankRequest++; homeRankRequest++; invalidat
       <button v-else-if="screen === 'result'" class="back-home text-button" aria-label="返回首页" @click="home"><Icon name="back" :size="18" />返回首页</button>
       <button v-else-if="screen === 'ranks'" class="icon-button" aria-label="返回" @click="backFromRanks"><Icon name="back" /></button>
       <div v-else class="wordmark"><BrandMark :size="26" /><span>猜地图</span></div>
-      <span v-if="screen === 'game' && session" class="header-caption">猜{{ noun }}<span class="caption-progress">{{ session.index + 1 }} / {{ session.deck.length }}</span></span>
+      <span v-if="screen === 'game' && session" class="header-caption">猜{{ noun }}<span class="caption-progress">第 {{ session.index + 1 }} 题</span></span>
       <span v-else-if="screen === 'ranks'" class="header-caption">一起认识世界</span>
       <button v-if="screen === 'home'" class="icon-button info-button" aria-label="玩法与地图说明" @click="openModal('info', $event)"><Icon name="info" :size="19" /></button>
       <span v-else class="header-dot" aria-hidden="true"></span>
     </header>
 
-      <HomeScreen v-if="screen === 'home'" :mode="mode" :region-name="regionName" :region-meta="regionMeta" :local="localHome" :preview="preview" :pool-count="homePool.length" :config-label="label(options)" :best="selectedBest" :show-ranks="availability !== 'unavailable'" :can-open-ranks="availability === 'available'" :rank-loading="homeRankLoading" :rank-error="homeRankError" :rank-entries="homeTopTen" @mode="changeMode" @start="start()" @regions="openRegions" @ranks="openRanks" @retry="loadHomeRanks(true)" />
+      <HomeScreen v-if="screen === 'home'" :mode="mode" :region-name="regionName" :preview="preview" :config-label="label(options)" :best="selectedBest" :show-ranks="availability !== 'unavailable'" :can-open-ranks="availability === 'available'" :rank-loading="homeRankLoading" :rank-error="homeRankError" :rank-entries="homeTopTen" @mode="changeMode" @start="start()" @regions="openRegions" @ranks="openRanks" @retry="loadHomeRanks(true)" />
       <GameScreen v-else-if="screen === 'game' && session && current" :session="session" :current="current" :current-region="currentRegion" :noun="noun" :unit="unit" :context-line="contextLine" :inset-label="insetLabel" :will-finish="willFinish" :streak="streak" :advancing="advancing" :advance-epoch="advanceEpoch" :choice-name="choiceName" @choose="choose" @next="next" />
-      <ResultScreen v-else-if="screen === 'result' && session" :session="session" :completed-all="completedAll" :unit="unit" :config-label="label(session.options)" :title="rankTitle" :new-best="newBest" :local-only="localOnly" :best="selectedBest" :save-failed="saveFailed" :available="availability === 'available'" :submit-state="submitState" :result-rank="resultRank" :missed="missedNames" :coverage-complete="bank.coverage.complete" :follow-available="followAvailable" :share-available="shareAvailable" :share-busy="shareBusy" @replay="start(session.options)" @follow="openFollow" @ranks="openRanks" @share="share" />
+      <ResultScreen v-else-if="screen === 'result' && session" :session="session" :completed-all="completedAll" :unit="unit" :config-label="label(session.options)" :title="rankTitle" :ring-total="ringTotal" :new-best="newBest" :regional-start="regionalStart" :best="selectedBest" :save-failed="saveFailed" :available="availability === 'available'" :submit-state="submitState" :result-rank="resultRank" :missed="missedNames" :coverage-complete="bank.coverage.complete" :follow-available="followAvailable" :share-available="shareAvailable" :share-busy="shareBusy" @replay="start(session.options)" @follow="openFollow" @ranks="openRanks" @share="share" />
       <RanksScreen v-else-if="screen === 'ranks'" :board="rankBoard" :period="period" :loading="rankLoading" :error="rankError" :unavailable="availability === 'unavailable'" :entries="rankEntries" :my-rank="myRank" :my-rank-text="myRankText" :caption="rankCaption" :coverage-note="rankBoard === 'china-provinces' && !bank.coverage.complete" @board="changeBoard" @period="changePeriod" @retry="loadRanks(true)" @back="backFromRanks" @play="start(defaultOptions(rankBoard === 'china-provinces' ? 'cities' : 'countries'))" />
 
     <footer v-if="screen === 'home'" class="site-footer"><span>保持好奇，慢慢认识。</span></footer>
     <AppDialog v-if="modal" :title="modal === 'exit' ? '退出本局' : modal === 'regions' ? '选择地区' : modal === 'follow' ? '关注作者' : '玩法与地图说明'" :sheet="modal === 'regions'" :wide="modal === 'regions'" :return-focus="modalTrigger" @close="closeModal">
       <template v-if="modal === 'exit'"><span class="eyebrow">这张地图，还没看完</span><h2>先休息一下？</h2><p>返回首页会结束本局，未完成的成绩不上榜。</p><button class="primary-button" @click="closeModal">接着猜</button><button class="quiet-button" @click="home">返回首页</button></template>
-      <RegionPicker v-else-if="modal === 'regions'" :regions="bank.regions" :selected="regionId" :counts="counts" @select="pickRegion" />
+      <RegionPicker v-else-if="modal === 'regions'" :regions="bank.regions" :selected="regionId" @select="pickRegion" />
       <template v-else-if="modal === 'follow'"><div class="follow-emblem"><Icon name="heart" :size="30" /></div><span class="eyebrow">把好奇心留在这里</span><h2>关注作者</h2><p>喜欢这样的地理小游戏，可以关注作者。<br>下一次，再一起认识一个地方。</p><button class="primary-button" :disabled="followBusy" @click="follow">{{ followBusy ? '等待小红书确认…' : '关注作者' }}<Icon name="arrow" :size="18" /></button><p v-if="followNote" class="follow-status" role="status">{{ followNote }}</p><button class="quiet-button" @click="closeModal">暂时不用</button></template>
       <template v-else>
         <span class="eyebrow">关于猜地图</span><h2>一点点好奇，就够了。</h2>
         <h3>玩法</h3>
         <p>看轮廓，四选一。答对得一分，猜错三次结束。不计时，不扣分。</p>
-        <p>国家点击开始即可游玩，无需选择难度。一局题目不重复，全部答完也会结算。</p>
-        <p>中国大陆默认猜省级地区，一局最多31题；选择具体地区后，猜其下一级行政区。{{ bank.coverage.complete ? '按2026年初来源快照收录大陆31个省级地区，默认只猜这些省级地区的轮廓；主动选择省和自治区后猜地级行政区，选择直辖市后猜区县，并非全国所有县市。' : '当前仍为十省40道精选题的预览，并非全国完整题库；完整地级行政区与直辖市区县边界待核验。预览的中国成绩不提交全域榜。' }}指定地区只记本地区最佳。</p>
+        <p>国家点击开始即可游玩，先易后难。一局题目不重复，全部答完也会结算。</p>
+        <p>中国大陆从省级地区猜起，接着是各省的地级行政区和直辖市的区县；选择具体地区，就从那里开始，再走遍全国。{{ bank.coverage.complete ? '按2026年初来源快照收录大陆31个省级地区，省和自治区收录地级行政区，直辖市收录区县，并非全国所有县市。' : '当前仍为十省40道精选题的预览，并非全国完整题库；完整地级行政区与直辖市区县边界待核验。预览的中国成绩不提交全域榜。' }}不同开局都计入中国大陆榜，个人最佳按开局地区分别记录。</p>
         <h3>地图与数据来源</h3>
-        <p class="source-note">国家首页中国示例完整使用公开的2023年版标准地图原图，审图号：GS(2023)2766号，不作为游戏题目。法国仅展示欧洲本土与科西嘉岛，题面另有标注。游戏轮廓地图{{ config.mapApprovalLabel }}。轮廓仅用于地理识别，不用于导航、测绘或界线认定。完整来源、版本及范围随包提供。</p>
+        <p class="source-note">法国仅展示欧洲本土与科西嘉岛，荷兰仅展示欧洲本土，厄瓜多尔不含加拉帕戈斯群岛，新西兰仅展示本土主要岛屿，题面另有标注。游戏轮廓地图{{ config.mapApprovalLabel }}。轮廓仅用于地理识别，不用于导航、测绘或界线认定。完整来源、版本及范围随包提供。</p>
         <p v-for="source in bank.notices" :key="source.name" class="source-note">{{ source.name }} · {{ source.license }}<br>{{ source.attribution }}<br>许可：{{ source.licenseUrl }}</p>
         <h3>记录与排行榜</h3>
-        <p class="source-note">个人最佳保存在当前设备，按玩法和地区分别记录，清除缓存可能丢失；省级玩法独立记录最佳，不混入旧版城市与区县混合成绩。排行榜仅在小红书支持且开放时显示。关注需你在平台确认，不影响游戏成绩。</p>
+        <p class="source-note">个人最佳保存在当前设备，按玩法和开局地区分别记录，清除缓存可能丢失。排行榜仅在小红书支持且开放时显示。关注需你在平台确认，不影响游戏成绩。</p>
         <button class="primary-button" @click="closeModal">知道了</button>
       </template>
     </AppDialog>

@@ -35,8 +35,6 @@
 .outline-map{width:90%;height:calc(100% - 24px)!important;margin-bottom:24px;overflow:visible}
 .outline-map>path{fill:var(--ink);stroke:var(--ink);stroke-width:.65}
 .map-approval{position:absolute;left:8px;bottom:5px;font-size:var(--t-xs);line-height:16px;color:var(--muted);white-space:nowrap;padding:0 3px;user-select:text;-webkit-user-select:text}
-.map-scene--standard{background:none}
-.standard-map-image{display:block;width:100%;height:calc(100% - 24px);max-width:100%;object-fit:contain;margin-bottom:24px}
 .context-region{fill:var(--kraft-2);stroke:#9c9a80;stroke-width:2}
 .context-highlight{fill:var(--accent);stroke:var(--accent);stroke-width:2}
 

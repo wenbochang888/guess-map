@@ -2101,6 +2101,2095 @@
           "country-nor"
         ]
       }
+    },
+    "country-rus": {
+      "familiarityBand": 1,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-gha",
+          "country-lka",
+          "country-geo",
+          "country-bgd",
+          "country-zmb",
+          "country-cri",
+          "country-lby",
+          "country-nzl"
+        ],
+        "medium": [
+          "country-fin",
+          "country-est",
+          "country-nor",
+          "country-lva",
+          "country-lka",
+          "country-omn",
+          "country-tjk",
+          "country-kor"
+        ],
+        "hard": [
+          "country-mng",
+          "country-prk",
+          "country-kaz",
+          "country-kgz",
+          "country-kor",
+          "country-tjk",
+          "country-uzb",
+          "country-jpn"
+        ]
+      }
+    },
+    "country-prk": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-prt",
+          "country-fin",
+          "country-tza",
+          "country-pan",
+          "country-isl",
+          "country-dnk",
+          "country-svn",
+          "country-ecu"
+        ],
+        "medium": [
+          "country-kor",
+          "country-jpn",
+          "country-mng",
+          "country-phl",
+          "country-ukr",
+          "country-est",
+          "country-gbr",
+          "country-sdn"
+        ],
+        "hard": [
+          "country-kor",
+          "country-jpn",
+          "country-mng",
+          "country-rus",
+          "country-phl",
+          "country-lao",
+          "country-vnm",
+          "country-btn"
+        ]
+      }
+    },
+    "country-mmr": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tun",
+          "country-nzl",
+          "country-blr",
+          "country-rus",
+          "country-col",
+          "country-bih",
+          "country-nor",
+          "country-sdn"
+        ],
+        "medium": [
+          "country-lao",
+          "country-bgd",
+          "country-tha",
+          "country-vnm",
+          "country-bol",
+          "country-nga",
+          "country-cub",
+          "country-jam"
+        ],
+        "hard": [
+          "country-lao",
+          "country-bgd",
+          "country-tha",
+          "country-vnm",
+          "country-btn",
+          "country-khm",
+          "country-npl",
+          "country-lka"
+        ]
+      }
+    },
+    "country-irn": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-ken",
+          "country-uga",
+          "country-nor",
+          "country-gbr",
+          "country-ukr",
+          "country-aut",
+          "country-mda",
+          "country-che"
+        ],
+        "medium": [
+          "country-kwt",
+          "country-are",
+          "country-tkm",
+          "country-irq",
+          "country-lva",
+          "country-mex",
+          "country-mar",
+          "country-hun"
+        ],
+        "hard": [
+          "country-kwt",
+          "country-are",
+          "country-tkm",
+          "country-irq",
+          "country-sau",
+          "country-omn",
+          "country-afg",
+          "country-syr"
+        ]
+      }
+    },
+    "country-irq": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-eth",
+          "country-pan",
+          "country-grc",
+          "country-pol",
+          "country-nor",
+          "country-bwa",
+          "country-lva",
+          "country-zwe"
+        ],
+        "medium": [
+          "country-syr",
+          "country-kwt",
+          "country-jor",
+          "country-irn",
+          "country-zaf",
+          "country-zmb",
+          "country-bih",
+          "country-bra"
+        ],
+        "hard": [
+          "country-syr",
+          "country-kwt",
+          "country-jor",
+          "country-irn",
+          "country-tur",
+          "country-sau",
+          "country-geo",
+          "country-are"
+        ]
+      }
+    },
+    "country-afg": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-usa",
+          "country-mda",
+          "country-cri",
+          "country-bra",
+          "country-hun",
+          "country-alb",
+          "country-sds",
+          "country-uga"
+        ],
+        "medium": [
+          "country-tjk",
+          "country-uzb",
+          "country-tkm",
+          "country-kgz",
+          "country-cri",
+          "country-bel",
+          "country-uga",
+          "country-nam"
+        ],
+        "hard": [
+          "country-tjk",
+          "country-uzb",
+          "country-tkm",
+          "country-kgz",
+          "country-irn",
+          "country-kaz",
+          "country-npl",
+          "country-are"
+        ]
+      }
+    },
+    "country-tjk": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-nga",
+          "country-sen",
+          "country-mex",
+          "country-civ",
+          "country-svk",
+          "country-lva",
+          "country-ukr",
+          "country-ltu"
+        ],
+        "medium": [
+          "country-kgz",
+          "country-uzb",
+          "country-afg",
+          "country-tkm",
+          "country-ago",
+          "country-tun",
+          "country-fin",
+          "country-fra"
+        ],
+        "hard": [
+          "country-kgz",
+          "country-uzb",
+          "country-afg",
+          "country-tkm",
+          "country-kaz",
+          "country-npl",
+          "country-irn",
+          "country-btn"
+        ]
+      }
+    },
+    "country-kgz": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-esp",
+          "country-bih",
+          "country-egy",
+          "country-bel",
+          "country-rus",
+          "country-hrv",
+          "country-sen",
+          "country-hnd"
+        ],
+        "medium": [
+          "country-tjk",
+          "country-uzb",
+          "country-kaz",
+          "country-afg",
+          "country-ita",
+          "country-svn",
+          "country-fra",
+          "country-dza"
+        ],
+        "hard": [
+          "country-tjk",
+          "country-uzb",
+          "country-kaz",
+          "country-afg",
+          "country-tkm",
+          "country-npl",
+          "country-btn",
+          "country-irn"
+        ]
+      }
+    },
+    "country-tkm": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-bel",
+          "country-cod",
+          "country-mar",
+          "country-dnk",
+          "country-sds",
+          "country-nzl",
+          "country-mdg",
+          "country-grc"
+        ],
+        "medium": [
+          "country-uzb",
+          "country-irn",
+          "country-afg",
+          "country-tjk",
+          "country-ago",
+          "country-tun",
+          "country-civ",
+          "country-sdn"
+        ],
+        "hard": [
+          "country-uzb",
+          "country-irn",
+          "country-afg",
+          "country-tjk",
+          "country-kaz",
+          "country-kgz",
+          "country-geo",
+          "country-kwt"
+        ]
+      }
+    },
+    "country-syr": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tza",
+          "country-mda",
+          "country-cod",
+          "country-nzl",
+          "country-per",
+          "country-gtm",
+          "country-ken",
+          "country-bra"
+        ],
+        "medium": [
+          "country-jor",
+          "country-irq",
+          "country-tur",
+          "country-geo",
+          "country-che",
+          "country-ven",
+          "country-egy",
+          "country-mdg"
+        ],
+        "hard": [
+          "country-jor",
+          "country-irq",
+          "country-tur",
+          "country-geo",
+          "country-kwt",
+          "country-egy",
+          "country-sau",
+          "country-irn"
+        ]
+      }
+    },
+    "country-jor": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-pry",
+          "country-ltu",
+          "country-zmb",
+          "country-tza",
+          "country-grc",
+          "country-nga",
+          "country-ita",
+          "country-che"
+        ],
+        "medium": [
+          "country-syr",
+          "country-irq",
+          "country-tur",
+          "country-kwt",
+          "country-hun",
+          "country-eth",
+          "country-bgr",
+          "country-usa"
+        ],
+        "hard": [
+          "country-syr",
+          "country-irq",
+          "country-egy",
+          "country-tur",
+          "country-kwt",
+          "country-sau",
+          "country-geo",
+          "country-grc"
+        ]
+      }
+    },
+    "country-yem": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-pol",
+          "country-uga",
+          "country-nor",
+          "country-nga",
+          "country-zmb",
+          "country-fra",
+          "country-cod",
+          "country-che"
+        ],
+        "medium": [
+          "country-sau",
+          "country-omn",
+          "country-are",
+          "country-kwt",
+          "country-lby",
+          "country-tza",
+          "country-ven",
+          "country-bgr"
+        ],
+        "hard": [
+          "country-sau",
+          "country-omn",
+          "country-eth",
+          "country-are",
+          "country-kwt",
+          "country-sdn",
+          "country-irn",
+          "country-irq"
+        ]
+      }
+    },
+    "country-kwt": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-che",
+          "country-lva",
+          "country-pol",
+          "country-zwe",
+          "country-moz",
+          "country-png",
+          "country-chl",
+          "country-swe"
+        ],
+        "medium": [
+          "country-irq",
+          "country-sau",
+          "country-irn",
+          "country-are",
+          "country-nzl",
+          "country-chl",
+          "country-nld",
+          "country-mda"
+        ],
+        "hard": [
+          "country-irq",
+          "country-sau",
+          "country-irn",
+          "country-are",
+          "country-syr",
+          "country-jor",
+          "country-omn",
+          "country-geo"
+        ]
+      }
+    },
+    "country-nld": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-kgz",
+          "country-tkm",
+          "country-lby",
+          "country-aus",
+          "country-npl",
+          "country-sdn",
+          "country-khm",
+          "country-kor"
+        ],
+        "medium": [
+          "country-bel",
+          "country-deu",
+          "country-dnk",
+          "country-gbr",
+          "country-ner",
+          "country-lka",
+          "country-jor",
+          "country-can"
+        ],
+        "hard": [
+          "country-bel",
+          "country-deu",
+          "country-dnk",
+          "country-gbr",
+          "country-che",
+          "country-fra",
+          "country-aut",
+          "country-cze"
+        ]
+      }
+    },
+    "country-bel": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-zmb",
+          "country-nam",
+          "country-geo",
+          "country-civ",
+          "country-cub",
+          "country-bgd",
+          "country-ner",
+          "country-tkm"
+        ],
+        "medium": [
+          "country-nld",
+          "country-deu",
+          "country-fra",
+          "country-che",
+          "country-tun",
+          "country-sds",
+          "country-cmr",
+          "country-mli"
+        ],
+        "hard": [
+          "country-nld",
+          "country-deu",
+          "country-fra",
+          "country-che",
+          "country-gbr",
+          "country-aut",
+          "country-dnk",
+          "country-cze"
+        ]
+      }
+    },
+    "country-dnk": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-lao",
+          "country-ury",
+          "country-kaz",
+          "country-col",
+          "country-are",
+          "country-hnd",
+          "country-jor",
+          "country-mng"
+        ],
+        "medium": [
+          "country-nld",
+          "country-deu",
+          "country-bel",
+          "country-gbr",
+          "country-sdn",
+          "country-per",
+          "country-kor",
+          "country-uga"
+        ],
+        "hard": [
+          "country-nld",
+          "country-deu",
+          "country-bel",
+          "country-gbr",
+          "country-pol",
+          "country-swe",
+          "country-cze",
+          "country-ltu"
+        ]
+      }
+    },
+    "country-isl": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tcd",
+          "country-dza",
+          "country-dom",
+          "country-kwt",
+          "country-sdn",
+          "country-moz",
+          "country-are",
+          "country-mdg"
+        ],
+        "medium": [
+          "country-irl",
+          "country-gbr",
+          "country-nor",
+          "country-dnk",
+          "country-jor",
+          "country-aus",
+          "country-tur",
+          "country-chl"
+        ],
+        "hard": [
+          "country-irl",
+          "country-gbr",
+          "country-nor",
+          "country-dnk",
+          "country-swe",
+          "country-nld",
+          "country-fin",
+          "country-bel"
+        ]
+      }
+    },
+    "country-hun": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tha",
+          "country-civ",
+          "country-nga",
+          "country-omn",
+          "country-kgz",
+          "country-ago",
+          "country-sdn",
+          "country-jam"
+        ],
+        "medium": [
+          "country-svk",
+          "country-hrv",
+          "country-svn",
+          "country-bih",
+          "country-mli",
+          "country-bol",
+          "country-mar",
+          "country-ven"
+        ],
+        "hard": [
+          "country-svk",
+          "country-hrv",
+          "country-svn",
+          "country-bih",
+          "country-cze",
+          "country-rou",
+          "country-aut",
+          "country-pol"
+        ]
+      }
+    },
+    "country-svk": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-vnm",
+          "country-mex",
+          "country-tkm",
+          "country-uga",
+          "country-tun",
+          "country-egy",
+          "country-bra",
+          "country-tza"
+        ],
+        "medium": [
+          "country-hun",
+          "country-cze",
+          "country-pol",
+          "country-svn",
+          "country-ner",
+          "country-eth",
+          "country-dza",
+          "country-tkm"
+        ],
+        "hard": [
+          "country-hun",
+          "country-cze",
+          "country-pol",
+          "country-svn",
+          "country-aut",
+          "country-rou",
+          "country-hrv",
+          "country-bih"
+        ]
+      }
+    },
+    "country-bgr": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-cod",
+          "country-cri",
+          "country-kgz",
+          "country-irq",
+          "country-tha",
+          "country-per",
+          "country-syr",
+          "country-usa"
+        ],
+        "medium": [
+          "country-rou",
+          "country-grc",
+          "country-alb",
+          "country-mda",
+          "country-uga",
+          "country-mys",
+          "country-lao",
+          "country-tur"
+        ],
+        "hard": [
+          "country-rou",
+          "country-grc",
+          "country-alb",
+          "country-mda",
+          "country-bih",
+          "country-hun",
+          "country-hrv",
+          "country-svk"
+        ]
+      }
+    },
+    "country-hrv": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-mng",
+          "country-tkm",
+          "country-mar",
+          "country-tza",
+          "country-kwt",
+          "country-hnd",
+          "country-mdg",
+          "country-vnm"
+        ],
+        "medium": [
+          "country-bih",
+          "country-svn",
+          "country-hun",
+          "country-ita",
+          "country-lby",
+          "country-jam",
+          "country-per",
+          "country-vnm"
+        ],
+        "hard": [
+          "country-bih",
+          "country-svn",
+          "country-hun",
+          "country-ita",
+          "country-aut",
+          "country-alb",
+          "country-svk",
+          "country-cze"
+        ]
+      }
+    },
+    "country-blr": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-per",
+          "country-yem",
+          "country-pan",
+          "country-sdn",
+          "country-lby",
+          "country-mdg",
+          "country-ecu",
+          "country-pry"
+        ],
+        "medium": [
+          "country-ltu",
+          "country-lva",
+          "country-est",
+          "country-ukr",
+          "country-col",
+          "country-gha",
+          "country-zmb",
+          "country-bwa"
+        ],
+        "hard": [
+          "country-ltu",
+          "country-lva",
+          "country-est",
+          "country-ukr",
+          "country-pol",
+          "country-mda",
+          "country-svk",
+          "country-rou"
+        ]
+      }
+    },
+    "country-ltu": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-vnm",
+          "country-tza",
+          "country-tcd",
+          "country-ken",
+          "country-jor",
+          "country-per",
+          "country-pry",
+          "country-usa"
+        ],
+        "medium": [
+          "country-lva",
+          "country-blr",
+          "country-est",
+          "country-pol",
+          "country-tur",
+          "country-mex",
+          "country-uga",
+          "country-ury"
+        ],
+        "hard": [
+          "country-lva",
+          "country-blr",
+          "country-est",
+          "country-pol",
+          "country-svk",
+          "country-cze",
+          "country-swe",
+          "country-ukr"
+        ]
+      }
+    },
+    "country-lva": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tkm",
+          "country-tcd",
+          "country-ury",
+          "country-jpn",
+          "country-sen",
+          "country-eth",
+          "country-gha",
+          "country-tjk"
+        ],
+        "medium": [
+          "country-ltu",
+          "country-est",
+          "country-blr",
+          "country-pol",
+          "country-npl",
+          "country-bwa",
+          "country-pry",
+          "country-omn"
+        ],
+        "hard": [
+          "country-ltu",
+          "country-est",
+          "country-blr",
+          "country-pol",
+          "country-swe",
+          "country-fin",
+          "country-dnk",
+          "country-nor"
+        ]
+      }
+    },
+    "country-est": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-lka",
+          "country-gtm",
+          "country-nzl",
+          "country-uga",
+          "country-moz",
+          "country-afg",
+          "country-mng",
+          "country-ken"
+        ],
+        "medium": [
+          "country-lva",
+          "country-ltu",
+          "country-blr",
+          "country-swe",
+          "country-zaf",
+          "country-omn",
+          "country-phl",
+          "country-gha"
+        ],
+        "hard": [
+          "country-lva",
+          "country-ltu",
+          "country-blr",
+          "country-swe",
+          "country-fin",
+          "country-nor",
+          "country-pol",
+          "country-dnk"
+        ]
+      }
+    },
+    "country-svn": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-nga",
+          "country-zwe",
+          "country-jor",
+          "country-are",
+          "country-tha",
+          "country-npl",
+          "country-mmr",
+          "country-mar"
+        ],
+        "medium": [
+          "country-hrv",
+          "country-aut",
+          "country-bih",
+          "country-hun",
+          "country-irn",
+          "country-mex",
+          "country-ner",
+          "country-yem"
+        ],
+        "hard": [
+          "country-hrv",
+          "country-aut",
+          "country-bih",
+          "country-hun",
+          "country-cze",
+          "country-ita",
+          "country-svk",
+          "country-che"
+        ]
+      }
+    },
+    "country-bih": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tcd",
+          "country-mdg",
+          "country-ken",
+          "country-ury",
+          "country-gtm",
+          "country-jam",
+          "country-kor",
+          "country-zwe"
+        ],
+        "medium": [
+          "country-hrv",
+          "country-svn",
+          "country-alb",
+          "country-hun",
+          "country-cri",
+          "country-uzb",
+          "country-omn",
+          "country-egy"
+        ],
+        "hard": [
+          "country-hrv",
+          "country-svn",
+          "country-alb",
+          "country-hun",
+          "country-ita",
+          "country-aut",
+          "country-svk",
+          "country-rou"
+        ]
+      }
+    },
+    "country-alb": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-prk",
+          "country-pan",
+          "country-zaf",
+          "country-tcd",
+          "country-tun",
+          "country-tha",
+          "country-lao",
+          "country-jpn"
+        ],
+        "medium": [
+          "country-grc",
+          "country-bih",
+          "country-bgr",
+          "country-hrv",
+          "country-moz",
+          "country-zaf",
+          "country-usa",
+          "country-kgz"
+        ],
+        "hard": [
+          "country-grc",
+          "country-bih",
+          "country-bgr",
+          "country-hrv",
+          "country-ita",
+          "country-rou",
+          "country-hun",
+          "country-svn"
+        ]
+      }
+    },
+    "country-mda": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-civ",
+          "country-ven",
+          "country-prk",
+          "country-png",
+          "country-kaz",
+          "country-sen",
+          "country-syr",
+          "country-zmb"
+        ],
+        "medium": [
+          "country-rou",
+          "country-ukr",
+          "country-bgr",
+          "country-hun",
+          "country-nzl",
+          "country-aus",
+          "country-zaf",
+          "country-dom"
+        ],
+        "hard": [
+          "country-rou",
+          "country-ukr",
+          "country-bgr",
+          "country-hun",
+          "country-svk",
+          "country-blr",
+          "country-pol",
+          "country-bih"
+        ]
+      }
+    },
+    "country-geo": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-svn",
+          "country-dza",
+          "country-hnd",
+          "country-mex",
+          "country-tza",
+          "country-usa",
+          "country-pan",
+          "country-deu"
+        ],
+        "medium": [
+          "country-tur",
+          "country-syr",
+          "country-irq",
+          "country-jor",
+          "country-pry",
+          "country-hrv",
+          "country-fin",
+          "country-alb"
+        ],
+        "hard": [
+          "country-tur",
+          "country-syr",
+          "country-irq",
+          "country-ukr",
+          "country-mda",
+          "country-jor",
+          "country-tkm",
+          "country-irn"
+        ]
+      }
+    },
+    "country-lby": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-mex",
+          "country-svn",
+          "country-prt",
+          "country-dom",
+          "country-aus",
+          "country-tkm",
+          "country-col",
+          "country-arg"
+        ],
+        "medium": [
+          "country-tun",
+          "country-tcd",
+          "country-egy",
+          "country-ner",
+          "country-kgz",
+          "country-btn",
+          "country-ltu",
+          "country-per"
+        ],
+        "hard": [
+          "country-tun",
+          "country-tcd",
+          "country-egy",
+          "country-ner",
+          "country-grc",
+          "country-dza",
+          "country-alb",
+          "country-sdn"
+        ]
+      }
+    },
+    "country-tun": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-hnd",
+          "country-rou",
+          "country-lao",
+          "country-aus",
+          "country-vnm",
+          "country-jpn",
+          "country-are",
+          "country-btn"
+        ],
+        "medium": [
+          "country-dza",
+          "country-lby",
+          "country-ner",
+          "country-mar",
+          "country-pan",
+          "country-are",
+          "country-isl",
+          "country-usa"
+        ],
+        "hard": [
+          "country-dza",
+          "country-ita",
+          "country-lby",
+          "country-alb",
+          "country-esp",
+          "country-bih",
+          "country-hrv",
+          "country-grc"
+        ]
+      }
+    },
+    "country-sdn": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-bel",
+          "country-syr",
+          "country-khm",
+          "country-geo",
+          "country-tkm",
+          "country-vnm",
+          "country-npl",
+          "country-che"
+        ],
+        "medium": [
+          "country-sds",
+          "country-tcd",
+          "country-egy",
+          "country-eth",
+          "country-irl",
+          "country-afg",
+          "country-per",
+          "country-uzb"
+        ],
+        "hard": [
+          "country-sds",
+          "country-tcd",
+          "country-egy",
+          "country-eth",
+          "country-uga",
+          "country-lby",
+          "country-sau",
+          "country-ken"
+        ]
+      }
+    },
+    "country-sds": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-afg",
+          "country-kgz",
+          "country-npl",
+          "country-prk",
+          "country-tjk",
+          "country-esp",
+          "country-rus",
+          "country-dom"
+        ],
+        "medium": [
+          "country-uga",
+          "country-sdn",
+          "country-eth",
+          "country-ken",
+          "country-arg",
+          "country-mng",
+          "country-tha",
+          "country-swe"
+        ],
+        "hard": [
+          "country-uga",
+          "country-sdn",
+          "country-eth",
+          "country-ken",
+          "country-tcd",
+          "country-cod",
+          "country-tza",
+          "country-cmr"
+        ]
+      }
+    },
+    "country-tcd": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-lka",
+          "country-chl",
+          "country-tjk",
+          "country-pol",
+          "country-arg",
+          "country-mda",
+          "country-bol",
+          "country-dom"
+        ],
+        "medium": [
+          "country-cmr",
+          "country-ner",
+          "country-lby",
+          "country-sdn",
+          "country-rou",
+          "country-khm",
+          "country-syr",
+          "country-swe"
+        ],
+        "hard": [
+          "country-cmr",
+          "country-ner",
+          "country-lby",
+          "country-sdn",
+          "country-nga",
+          "country-sds",
+          "country-egy",
+          "country-uga"
+        ]
+      }
+    },
+    "country-ner": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-isl",
+          "country-afg",
+          "country-bra",
+          "country-est",
+          "country-che",
+          "country-pol",
+          "country-usa",
+          "country-aut"
+        ],
+        "medium": [
+          "country-nga",
+          "country-tcd",
+          "country-cmr",
+          "country-mli",
+          "country-svk",
+          "country-gbr",
+          "country-est",
+          "country-ita"
+        ],
+        "hard": [
+          "country-nga",
+          "country-tcd",
+          "country-cmr",
+          "country-mli",
+          "country-dza",
+          "country-lby",
+          "country-gha",
+          "country-tun"
+        ]
+      }
+    },
+    "country-mli": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-ita",
+          "country-rus",
+          "country-btn",
+          "country-isl",
+          "country-lka",
+          "country-bih",
+          "country-kgz",
+          "country-arg"
+        ],
+        "medium": [
+          "country-gha",
+          "country-civ",
+          "country-sen",
+          "country-ner",
+          "country-col",
+          "country-prk",
+          "country-kor",
+          "country-rou"
+        ],
+        "hard": [
+          "country-gha",
+          "country-civ",
+          "country-sen",
+          "country-ner",
+          "country-dza",
+          "country-mar",
+          "country-nga",
+          "country-cmr"
+        ]
+      }
+    },
+    "country-sen": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-svn",
+          "country-sau",
+          "country-mng",
+          "country-geo",
+          "country-fin",
+          "country-mmr",
+          "country-idn",
+          "country-lva"
+        ],
+        "medium": [
+          "country-mli",
+          "country-civ",
+          "country-gha",
+          "country-mar",
+          "country-jor",
+          "country-irn",
+          "country-lva",
+          "country-dom"
+        ],
+        "hard": [
+          "country-mli",
+          "country-civ",
+          "country-gha",
+          "country-mar",
+          "country-dza",
+          "country-ner",
+          "country-nga",
+          "country-prt"
+        ]
+      }
+    },
+    "country-civ": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-chl",
+          "country-lka",
+          "country-est",
+          "country-nld",
+          "country-col",
+          "country-vnm",
+          "country-npl",
+          "country-alb"
+        ],
+        "medium": [
+          "country-gha",
+          "country-mli",
+          "country-sen",
+          "country-nga",
+          "country-gbr",
+          "country-afg",
+          "country-lva",
+          "country-ury"
+        ],
+        "hard": [
+          "country-gha",
+          "country-mli",
+          "country-sen",
+          "country-nga",
+          "country-ner",
+          "country-cmr",
+          "country-mar",
+          "country-dza"
+        ]
+      }
+    },
+    "country-cmr": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-nzl",
+          "country-svn",
+          "country-blr",
+          "country-geo",
+          "country-jor",
+          "country-per",
+          "country-omn",
+          "country-nor"
+        ],
+        "medium": [
+          "country-nga",
+          "country-tcd",
+          "country-ner",
+          "country-gha",
+          "country-geo",
+          "country-che",
+          "country-bel",
+          "country-rou"
+        ],
+        "hard": [
+          "country-nga",
+          "country-tcd",
+          "country-ner",
+          "country-gha",
+          "country-cod",
+          "country-sds",
+          "country-civ",
+          "country-mli"
+        ]
+      }
+    },
+    "country-ago": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-uzb",
+          "country-nld",
+          "country-irq",
+          "country-pol",
+          "country-cze",
+          "country-kor",
+          "country-khm",
+          "country-syr"
+        ],
+        "medium": [
+          "country-cod",
+          "country-zmb",
+          "country-nam",
+          "country-bwa",
+          "country-svn",
+          "country-chl",
+          "country-bgr",
+          "country-rus"
+        ],
+        "hard": [
+          "country-cod",
+          "country-zmb",
+          "country-nam",
+          "country-bwa",
+          "country-zwe",
+          "country-tza",
+          "country-zaf",
+          "country-moz"
+        ]
+      }
+    },
+    "country-zmb": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-irn",
+          "country-uzb",
+          "country-khm",
+          "country-ury",
+          "country-dnk",
+          "country-deu",
+          "country-bol",
+          "country-esp"
+        ],
+        "medium": [
+          "country-zwe",
+          "country-moz",
+          "country-bwa",
+          "country-tza",
+          "country-pry",
+          "country-bel",
+          "country-rus",
+          "country-est"
+        ],
+        "hard": [
+          "country-zwe",
+          "country-moz",
+          "country-bwa",
+          "country-tza",
+          "country-ago",
+          "country-cod",
+          "country-nam",
+          "country-uga"
+        ]
+      }
+    },
+    "country-zwe": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-sau",
+          "country-svk",
+          "country-dnk",
+          "country-tur",
+          "country-hnd",
+          "country-tha",
+          "country-lka",
+          "country-col"
+        ],
+        "medium": [
+          "country-bwa",
+          "country-zmb",
+          "country-moz",
+          "country-zaf",
+          "country-ury",
+          "country-mng",
+          "country-che",
+          "country-prt"
+        ],
+        "hard": [
+          "country-bwa",
+          "country-zmb",
+          "country-moz",
+          "country-zaf",
+          "country-nam",
+          "country-ago",
+          "country-tza",
+          "country-cod"
+        ]
+      }
+    },
+    "country-moz": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-est",
+          "country-idn",
+          "country-tur",
+          "country-jor",
+          "country-bol",
+          "country-lka",
+          "country-grc",
+          "country-mmr"
+        ],
+        "medium": [
+          "country-zwe",
+          "country-zmb",
+          "country-mdg",
+          "country-bwa",
+          "country-ltu",
+          "country-geo",
+          "country-aus",
+          "country-cub"
+        ],
+        "hard": [
+          "country-zwe",
+          "country-zmb",
+          "country-mdg",
+          "country-bwa",
+          "country-tza",
+          "country-zaf",
+          "country-nam",
+          "country-ago"
+        ]
+      }
+    },
+    "country-cod": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-ltu",
+          "country-bgr",
+          "country-hun",
+          "country-lka",
+          "country-npl",
+          "country-fra",
+          "country-ecu",
+          "country-omn"
+        ],
+        "medium": [
+          "country-ago",
+          "country-zmb",
+          "country-uga",
+          "country-tza",
+          "country-kgz",
+          "country-per",
+          "country-syr",
+          "country-aut"
+        ],
+        "hard": [
+          "country-ago",
+          "country-zmb",
+          "country-uga",
+          "country-tza",
+          "country-sds",
+          "country-cmr",
+          "country-zwe",
+          "country-ken"
+        ]
+      }
+    },
+    "country-uga": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-ecu",
+          "country-tur",
+          "country-npl",
+          "country-tha",
+          "country-cub",
+          "country-irq",
+          "country-ukr",
+          "country-jor"
+        ],
+        "medium": [
+          "country-ken",
+          "country-sds",
+          "country-tza",
+          "country-eth",
+          "country-esp",
+          "country-sau",
+          "country-kgz",
+          "country-vnm"
+        ],
+        "hard": [
+          "country-ken",
+          "country-sds",
+          "country-tza",
+          "country-eth",
+          "country-cod",
+          "country-sdn",
+          "country-zmb",
+          "country-tcd"
+        ]
+      }
+    },
+    "country-ven": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-mys",
+          "country-tkm",
+          "country-irl",
+          "country-afg",
+          "country-cmr",
+          "country-gbr",
+          "country-dza",
+          "country-prt"
+        ],
+        "medium": [
+          "country-col",
+          "country-ecu",
+          "country-per",
+          "country-bol",
+          "country-sds",
+          "country-jpn",
+          "country-tha",
+          "country-mng"
+        ],
+        "hard": [
+          "country-col",
+          "country-dom",
+          "country-pan",
+          "country-ecu",
+          "country-jam",
+          "country-per",
+          "country-cri",
+          "country-cub"
+        ]
+      }
+    },
+    "country-ecu": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-aut",
+          "country-uzb",
+          "country-mda",
+          "country-can",
+          "country-svn",
+          "country-cod",
+          "country-bgr",
+          "country-nzl"
+        ],
+        "medium": [
+          "country-col",
+          "country-per",
+          "country-ven",
+          "country-bol",
+          "country-aus",
+          "country-tjk",
+          "country-hnd",
+          "country-ago"
+        ],
+        "hard": [
+          "country-col",
+          "country-per",
+          "country-pan",
+          "country-cri",
+          "country-ven",
+          "country-hnd",
+          "country-jam",
+          "country-bol"
+        ]
+      }
+    },
+    "country-bol": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-aut",
+          "country-cze",
+          "country-gha",
+          "country-nor",
+          "country-alb",
+          "country-dza",
+          "country-nga",
+          "country-rou"
+        ],
+        "medium": [
+          "country-pry",
+          "country-bra",
+          "country-per",
+          "country-ury",
+          "country-irn",
+          "country-zaf",
+          "country-mar",
+          "country-ita"
+        ],
+        "hard": [
+          "country-pry",
+          "country-bra",
+          "country-per",
+          "country-ury",
+          "country-ecu",
+          "country-chl",
+          "country-arg",
+          "country-col"
+        ]
+      }
+    },
+    "country-pry": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-tcd",
+          "country-irq",
+          "country-dnk",
+          "country-pan",
+          "country-egy",
+          "country-ukr",
+          "country-mys",
+          "country-btn"
+        ],
+        "medium": [
+          "country-bol",
+          "country-ury",
+          "country-bra",
+          "country-arg",
+          "country-hnd",
+          "country-gha",
+          "country-cod",
+          "country-rou"
+        ],
+        "hard": [
+          "country-bol",
+          "country-ury",
+          "country-bra",
+          "country-arg",
+          "country-chl",
+          "country-per",
+          "country-ecu",
+          "country-ven"
+        ]
+      }
+    },
+    "country-ury": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-civ",
+          "country-rus",
+          "country-mdg",
+          "country-cze",
+          "country-cod",
+          "country-prk",
+          "country-aus",
+          "country-ner"
+        ],
+        "medium": [
+          "country-arg",
+          "country-pry",
+          "country-chl",
+          "country-bol",
+          "country-afg",
+          "country-mex",
+          "country-irl",
+          "country-mmr"
+        ],
+        "hard": [
+          "country-arg",
+          "country-pry",
+          "country-chl",
+          "country-bol",
+          "country-bra",
+          "country-per",
+          "country-ecu",
+          "country-col"
+        ]
+      }
+    },
+    "country-pan": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-egy",
+          "country-mmr",
+          "country-uzb",
+          "country-tur",
+          "country-sen",
+          "country-che",
+          "country-phl",
+          "country-ecu"
+        ],
+        "medium": [
+          "country-cri",
+          "country-hnd",
+          "country-jam",
+          "country-gtm",
+          "country-mdg",
+          "country-nld",
+          "country-ltu",
+          "country-uzb"
+        ],
+        "hard": [
+          "country-cri",
+          "country-col",
+          "country-hnd",
+          "country-jam",
+          "country-ecu",
+          "country-gtm",
+          "country-cub",
+          "country-ven"
+        ]
+      }
+    },
+    "country-cri": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-ury",
+          "country-gbr",
+          "country-bgd",
+          "country-jpn",
+          "country-swe",
+          "country-irl",
+          "country-ukr",
+          "country-svn"
+        ],
+        "medium": [
+          "country-pan",
+          "country-hnd",
+          "country-gtm",
+          "country-jam",
+          "country-lka",
+          "country-arg",
+          "country-pry",
+          "country-bih"
+        ],
+        "hard": [
+          "country-pan",
+          "country-hnd",
+          "country-gtm",
+          "country-jam",
+          "country-col",
+          "country-cub",
+          "country-ecu",
+          "country-dom"
+        ]
+      }
+    },
+    "country-gtm": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-che",
+          "country-sau",
+          "country-civ",
+          "country-sdn",
+          "country-afg",
+          "country-ltu",
+          "country-gbr",
+          "country-hun"
+        ],
+        "medium": [
+          "country-hnd",
+          "country-cri",
+          "country-cub",
+          "country-pan",
+          "country-ltu",
+          "country-sdn",
+          "country-khm",
+          "country-cod"
+        ],
+        "hard": [
+          "country-hnd",
+          "country-cri",
+          "country-cub",
+          "country-pan",
+          "country-jam",
+          "country-mex",
+          "country-dom",
+          "country-col"
+        ]
+      }
+    },
+    "country-hnd": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-irl",
+          "country-egy",
+          "country-irq",
+          "country-syr",
+          "country-ken",
+          "country-sdn",
+          "country-rus",
+          "country-ury"
+        ],
+        "medium": [
+          "country-gtm",
+          "country-cri",
+          "country-pan",
+          "country-jam",
+          "country-uzb",
+          "country-cmr",
+          "country-ner",
+          "country-aus"
+        ],
+        "hard": [
+          "country-gtm",
+          "country-cri",
+          "country-pan",
+          "country-jam",
+          "country-cub",
+          "country-dom",
+          "country-col",
+          "country-mex"
+        ]
+      }
+    },
+    "country-jam": {
+      "familiarityBand": 2,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-zwe",
+          "country-bgr",
+          "country-mys",
+          "country-hrv",
+          "country-bel",
+          "country-moz",
+          "country-lka",
+          "country-prk"
+        ],
+        "medium": [
+          "country-cub",
+          "country-dom",
+          "country-hnd",
+          "country-pan",
+          "country-egy",
+          "country-che",
+          "country-grc",
+          "country-svk"
+        ],
+        "hard": [
+          "country-cub",
+          "country-dom",
+          "country-hnd",
+          "country-pan",
+          "country-cri",
+          "country-gtm",
+          "country-col",
+          "country-ven"
+        ]
+      }
+    },
+    "country-dom": {
+      "familiarityBand": 3,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-prk",
+          "country-ury",
+          "country-gbr",
+          "country-lka",
+          "country-tcd",
+          "country-tkm",
+          "country-isl",
+          "country-ner"
+        ],
+        "medium": [
+          "country-jam",
+          "country-cub",
+          "country-pan",
+          "country-hnd",
+          "country-lva",
+          "country-sdn",
+          "country-zwe",
+          "country-swe"
+        ],
+        "hard": [
+          "country-jam",
+          "country-cub",
+          "country-ven",
+          "country-pan",
+          "country-col",
+          "country-hnd",
+          "country-cri",
+          "country-gtm"
+        ]
+      }
+    },
+    "country-nzl": {
+      "familiarityBand": 1,
+      "status": "auto-draft",
+      "distractors": {
+        "easy": [
+          "country-jpn",
+          "country-aut",
+          "country-uzb",
+          "country-mys",
+          "country-kaz",
+          "country-mli",
+          "country-kwt",
+          "country-per"
+        ],
+        "medium": [
+          "country-aus",
+          "country-png",
+          "country-idn",
+          "country-mys",
+          "country-zmb",
+          "country-vnm",
+          "country-est",
+          "country-jor"
+        ],
+        "hard": [
+          "country-aus",
+          "country-png",
+          "country-idn",
+          "country-mys",
+          "country-phl",
+          "country-khm",
+          "country-vnm",
+          "country-tha"
+        ]
+      }
     }
-  }
+  },
+  "autoDraft": "Entries with status auto-draft were generated by scripts/expand-countries.py on 2026-11-11."
 }

@@ -18,6 +18,6 @@ result={'path':str(out),'status':'preview-incomplete-china-data' if args.preview
 result['generatedAt']=datetime.datetime.now(datetime.timezone.utc).isoformat()
 if not args.preview:
  sources=json.loads((root/'dist/assets/home-preview-sources.json').read_text())
- result.update(featureCompletion='complete',homePreviewValidation='passed',homePreviews={'chinaMainland':sources['chinaMainland']['status'],'countries':sources['countries']['status'],'countryImage':sources['countries']['imageFile'],'countryImageApprovalNumber':sources['countries']['approvalNumber']},knownLimitations=[],chrome61DeviceValidation='pending',performanceDeviceValidation='pending')
+ result.update(featureCompletion='complete',homePreviewValidation='passed',homePreviews={'chinaMainland':sources['chinaMainland']['status'],'countries':sources['countries']['status'],'countryOutline':sources['countries']['name']},knownLimitations=[],chrome61DeviceValidation='pending',performanceDeviceValidation='pending')
 (root/('artifacts/preview-manifest.json' if args.preview else 'artifacts/package-manifest.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(json.dumps(result,ensure_ascii=False,indent=2))
